@@ -4,13 +4,13 @@
 function main(){
 	dirIn="IN";
 	dirWork="WORK";
-	dirErreur1="";
-	dirErreur2="";
-	dirErreur3="";
-	dirErreur4="";
-	dirErreur5="";
-	dirArchives="";
-	dirConserves="";
+	dirErreur1="ERREURS/ERREUR1";
+	dirErreur2="ERREURS/ERREUR2";
+	dirErreur3="ERREURS/ERREUR3";
+	dirErreur4="ERREURS/ERREUR4";
+	dirErreur5="ERREURS/ERREUR5";
+	dirArchives="ARCHIVES";
+	dirConserves="CONSERVES";
 	dirLogs="LOGS";
 	dirCalques="CALQUES";
 
@@ -25,11 +25,8 @@ function main(){
 	#récupération des parametres dans la base de donnée
 
 	calqueEntete=$(psql -t -U $USERNAME -d $DATABASE -c "SELECT path FROM entetepage;") 
-	 echo $calqueEntete
 	calquePiedPage=$(psql -t -U $USERNAME -d $DATABASE -c "SELECT path FROM piedpage;") 
-	 echo $calquePiedPage
 	calqueSignature=$(psql -t -U $USERNAME -d $DATABASE -c "SELECT path FROM signature;") 
-	 echo $calqueSignature
 	dateProg="$(date +%d-%m-%Y' '%H:%M:%S)";
 	nomFileLog="LOG_"$nomSource"_"$(date +%d_%m_%Y);
     pile=10; #Nombre de fichiers a traiter par passage
@@ -47,12 +44,13 @@ function main(){
       echo "work"
 	elif [ $nbFileIn != 0 ]; then
 		traitementPdf;
-		
+
 	fi;
 
 
 	function traitementPdf(){
         #Recuperation des fichiers pdf
+        echo "traitementPdf"
 		if [ $nbFileIn != 0 ]; then
 
 	        fichiers=`ls $dirIn/*.pdf | head -n$pile`;
@@ -63,22 +61,25 @@ function main(){
 	        nbFileIn=`find $dirIn -type f -iname "*.pdf" | wc -l`;
 		    for file in $filesWork; do	   
 
-			 	extractionData ;  
+			 extractionData ;  
 			done;
 
 	        if [ $nbFileIn != 0 ]; then
 				traitementPdf;
+
 			fi;	
 		else
 			statutApp="Répertoire IN vide";
+			echo $statutApp
 			echo $dateProg": "$statutApp >> $dirLogs/$dateRep/$nomFileLog.txt;
 		fi;
 
 	}
 
 	function extractionData(){
+		echo "extractionData"
         nameFile=$(basename $file .${file##*.});
-		nbPage=$(pdfinfo  $dirWork/$nameFile.pdf | grep Pages | awk '{print $2}');
+		nbPage=""
 		nomPatient="";
 		adressePatient="":
 		sexe="";
@@ -88,13 +89,14 @@ function main(){
 		medecin="";
 		bioValideur="";
 
-		#Conversion pdftotext
-		echo "extractionData"
+		#Conversion pdftotext		
 		pdftotext $dirWork/$nameFile.pdf
+		#-e $nomfichier Vérifie si le fichier existe.
+		#-n $chaine Vérifie si la chaîne est non vide.
 		if [ -e $dirWork/$nameFile.txt ]; then
 			#extraire les données
 			#utilisé les commande d'extraction grep -E
-			nomPatient="test" #extractPatient; 
+			nomPatient="" #extractPatient; 
 			adressePatient= extractAdressePatient;
 			sexe= extractSexePatient;
 			dateDeNaissance= extractDateDeNaissance;
@@ -102,22 +104,22 @@ function main(){
 			emailMedecin= extractEmailMedecin;
 			medecin= extractMedecin;
 			bioValideur= extractBioValideur;
-			numeroDossier="12" #extractNumDossier;
-			if [ -z $numeroDossier ] && [ -e $nomPatient ] ; then  #Si les champs importants sont renseignés
+			numeroDossier="" #extractNumDossier;
+			nbPage=$(pdfinfo  $dirWork/$nameFile.pdf | grep Pages | awk '{print $2}');
+			if [ -n "$numeroDossier" ] && [ -n "$nomPatient!" ] ; then  #Si les champs importants sont renseignés
 
-				if [ -z "$"calqueEntete"" ] && [ -e $dirWork/$nameFile.pdf ];then
-					ajoutCalque calqueEntete;
-					echo "calqueEntete"
+				if [ -n "$calqueEntete" ] && [ -e $dirWork/$nameFile.pdf ];then
+					ajoutCalque "$calqueEntete";
 				fi;
 
-				if [ -z "$"calquePiedPage"" ] && [ -e $dirWork/$nameFile.pdf ];then
-					ajoutCalque calquePiedPage;					
-					echo "calquePiedPage"
+				if [ -n "$calquePiedPage" ] && [ -e $dirWork/$nameFile.pdf ];then
+					ajoutCalque "$calquePiedPage";					
+					
 				fi;
 
-				if [ -z "$"calqueSignature"" ] && [ -e $dirWork/$nameFile.pdf ];then
-					ajoutCalque calqueSignature;					
-					echo "calqueSignature"
+				if [ -n "$calqueSignature" ] && [ -e $dirWork/$nameFile.pdf ];then
+					ajoutCalque "$calqueSignature";					
+					
 				fi;
 
 				if [ -e $dirWork/$nameFile.pdf ];then
@@ -127,7 +129,16 @@ function main(){
 
 			else
 				#ERREUR2
-				echo "ERREUR2"
+				dateErreur="$(date +%Y-%m-%d' '%H:%M:%S)";
+				mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt $dirErreur2;
+				statut=$nameFile.pdf"-> Erreur les champs importants ne sont renseignés numeroDossier et nomPatient";
+				echo $dateProg": "$statut >> $dirLogs/$dateRep/$nomFileLog.txt
+				Typerreur=$(psql -t -U $USERNAME -d $DATABASE -c "SELECT idtypeerreur FROM typeerreur WHERE typeerreur='ERREUR2';")
+				if [ -n $Typerreur ]; then
+					psql -t -U $USERNAME -d $DATABASE -c "INSERT INTO erreur(typeerreurid,date) VALUES($Typerreur,$(date +%Y-%m-%d' '%H:%M:%S));"
+
+				fi
+				echo "Erreur les champs importants ne sont renseignés numeroDossier et nomPatient"
 			fi;
 
 		else 
@@ -148,15 +159,23 @@ function main(){
 			echo $dateProg": "$statut >> $dirLogs/$dateRep/$nomFileLog.txt
 		fi;
 	}
-	#1
-	function ajoutCalque(){
+	#-n $chaine Vérifie si la chaîne est non vide.
+	function ajoutCalque(){		
 		#pdftk
 		arg1=$1 #$1 represente first argument
-		if [ -z $arg1 ]; then #si calque bien ajouter
-			echo "----"$arg1
+		if [ -n $arg1 ]; then #si calque bien ajouter			
+		pdftk $dirWork/$nameFile.pdf stamp $arg1  output $dirConserves/$nameFile.pdf;
+		echo "calque bien ajouter"
 		else
 			#ERREUR3
-			echo "ERREUR3"
+			statut=$nameFile"-> Erreur insertion de calques";
+			echo $dateProg": "$statut >> $dirLogs/$dateRep/$nomFileLog.txt
+			Typerreur=$(psql -t -U $USERNAME -d $DATABASE -c "SELECT idtypeerreur FROM typeerreur WHERE typeerreur='ERREUR3';")
+			if [ -n $Typerreur ]; then
+					psql -t -U $USERNAME -d $DATABASE -c "INSERT INTO erreur(typeerreurid,date) VALUES($Typerreur,$dateProg);"
+
+			fi
+			echo "Erreur insertion de calques"
 		fi;
 	}
 	extractNumDossier(){
@@ -198,6 +217,7 @@ function main(){
 		resultat=""
 		echo "$resultat"
 	}	
+	#-d $nomfichier Vérifie si le fichier est un répertoire.
 	function creatLogFile(){
 		#Verifier/creation si fichier LOG du jour exist
 		if [ ! -d $dirLogs ];then
