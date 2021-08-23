@@ -1,0 +1,871 @@
+<!Start>;V1=P;V2=2;V3=1804314103;V4=Mme
+;
+;V10=13 RUE VICTOR HUGO
+;V18=LC ;V21=16/04/18;V16=DA
+;V11=APPT 182 BAT MAINE
+;V14=CLERMONT
+;V12=60600 CLERMONT
+;
+;V13=60600;V23=14/04/18;V22=12H11;V17=CR;V5=THUILLIER LUCETTE
+;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-DR VERNAZ VIRGINIE
+-49 RUE W COUTELLIER
+-60600 CLERMONT
+01601
+/
+/MORA/HOP
+Patient(e) né(e) le 27/09/1939
+Sexe: F / DEVOYE
+Dossier N° 1804314103
+/ 14/04/18
+
+Mme THUILLIER LUCETTE
+13 RUE VICTOR HUGO
+APPT 182 BAT MAINE
+60600 CLERMONT
+
+Enregistré à 09h46 Prélevé le 14/04/18 à 09h00
+Prélevé par MR MORILLON ANTHONY
+Edition du 16/04/18 à 12H11 Résultat Complet
+
+HEMATOLOGIE
+Valeurs de référence
+
+Antérieurs
+
+HEMOGRAMME
+XN 2000, Sysmex; analyse réalisée sur sang total (Site de Mouy))
+
+HEMATIES . . .
+Hémoglobine.
+Hématocrite.
+T.C.M.H. . .
+C.C.M.H. . .
+V.G.M. . . .
+
+.
+.
+.
+.
+.
+.
+
+LEUCOCYTES . . .
+Polynucléaires
+Polynucléaires
+Polynucléaires
+Lymphocytes.
+Monocytes.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+. . . . . .
+Neutrophiles.
+Eosinophiles.
+Basophiles.
+
+4.22
+12,7
+40,1
+30,1
+31,7
+95,0
+
+à
+à
+à
+à
+à
+à
+
+5.20
+15,5
+47,0
+32,0
+36,0
+97,0
+
+4.000 à 10.000
+1500 à 7000
+100 à 400
+inf. à 100
+1500 à 4000
+200 à 1000
+
+227.000 /mm3
+
+150.000 à 400.000
+
+Volume moyen plaquettaire ....
+
+Page 1/6
+
+4.00
+12,5
+37,0
+27,0
+32,0
+80,0
+
+6.940 /mm3
+46,9 %
+3250 /mm3
+5,5 %
+380 /mm3
+0,9 %
+60 /mm3
+38,8 %
+2690 /mm3
+7,9 %
+550 /mm3
+
+PLAQUETTES . . . . . . . . . .
+
+Attention, résultats recto-verso
+
+M/mm3
+g/100ml
+%
+picog.
+%
+u3
+
+Dossier validé par
+
+10,6 fL
+
+DAVID AFONSO
+
+6,0 à 12,0
+
+22/06/17
+4.01
+12,4
+39,7
+30,9
+31,2
+99,0
+6.960
+3380
+350
+50
+2630
+560
+
+194.000
+22/06/17
+11,1
+22/06/17
+
+;
+
+<!Start>;V2=2;V3=1804314103;V4=Mme
+;V5=THUILLIER LUCETTE
+;V15=05 ;V16=DA ;V17=CRVERSO;<Stop!>
+1804314103 Mme THUILLIER LUCETTE
+Né(e) le 27/09/39 / DEVOYE
+
+;
+
+Dossier du 14/04/18
+Prélevé à : 09h00
+
+______________________________________________________________________________
+
+DIABETOLOGIE
+Valeurs de référence
+
+Antérieurs
+
+HEMOGLOBINE GLYQUEE
+Analyse réalisée sur sang total / D100 BIORAD (Site de Mouy))
+Changement de technique à compter du 18/08/15
+
+6,7 %
+
+Hémoglobine HbA1c . . . . . . . .
+
+7,2
+09/01/18
+
+Valeurs de références de lHbA1c: 4 à 6%
+
+Hémoglobine HbA1c unité IFCC
+Glycémie moyenne estimée
+
+49 mmol/mol
+1,61
+
+g/l
+
+(Estimation basée sur la formule issue de DIABETES CARE 25:275-278, 2002)
+
+Interprétation des résultats
+Sujet
+Sujet
+Sujet
+Sujet
+Sujet
+
+normal
+diabétique
+diabétique
+diabétique
+diabétique
+
+bien équilibré
+à surveiller
+mal équilibré
+non équilibré
+
+HBA1c NGSP
+4 à
+6 à
+7 à
+8 à
+sup
+
+6 %
+7 %
+8 %
+10 %
+à 10 %
+
+HBA1c IFCC
+20 à 42 mmol/mol
+42 à 53 mmol/mol
+53 à 64 mmol/mol
+64 à 86 mmol/mol
+sup à 86 mmol/mol
+
+(Référence HAS "Stratégie médicamenteuse du controle glycémique du diabète de type 2" 2013)
+
+Page 2/6
+Attention, résultats recto-verso
+
+Dossier validé par
+
+DAVID AFONSO
+
+55
+09/01/18
+
+<!Start>;V1=P;V2=2;V3=1804314103;V4=Mme
+;
+;V10=13 RUE VICTOR HUGO
+;V18=LC ;V21=16/04/18;V16=DA
+;V11=APPT 182 BAT MAINE
+;V14=CLERMONT
+;V12=60600 CLERMONT
+;
+;V13=60600;V23=14/04/18;V22=12H11;V17=CR;V5=THUILLIER LUCETTE
+;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-DR VERNAZ VIRGINIE
+-49 RUE W COUTELLIER
+-60600 CLERMONT
+01601
+/
+/MORA/HOP
+Patient(e) né(e) le 27/09/1939
+Sexe: F / DEVOYE
+Dossier N° 1804314103
+/ 14/04/18
+
+Mme THUILLIER LUCETTE
+13 RUE VICTOR HUGO
+APPT 182 BAT MAINE
+60600 CLERMONT
+
+Enregistré à 09h46 Prélevé le 14/04/18 à 09h00
+Prélevé par MR MORILLON ANTHONY
+Edition du 16/04/18 à 12H11 Résultat Complet
+
+ENZYMOLOGIE
+Valeurs normales a 37°C en fonction de l age et du sexe
+
+GOT (ASAT) . . . . . . . . .
+
+21 UI/l
+
+Valeurs de référence
+inf. à 32
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption (Site de Mouy))
+
+GPT (ALAT) . . . . . . . . .
+
+16 UI/l
+
+inf. à 31
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption (Site de Mouy))
+
+GAMMA GT. . . . . . . . . . . . .
+
+52 UI/l
+
+Antérieurs
+21
+30/08/17
+35
+30/08/17
+
+inf. à 40
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption (Site de Mouy))
+
+C.P.K. . . . . . . . . . . . . . .
+
+50 UI/l
+
+(Technique enzymatique, Roche COBAS (Site de Mouy))
+
+Page 3/6
+Attention, résultats recto-verso
+
+Dossier validé par
+
+DAVID AFONSO
+
+26 à 192
+
+65
+22/06/17
+
+;
+
+<!Start>;V2=2;V3=1804314103;V4=Mme
+;V5=THUILLIER LUCETTE
+;V15=05 ;V16=DA ;V17=CRVERSO;<Stop!>
+1804314103 Mme THUILLIER LUCETTE
+Né(e) le 27/09/39 / DEVOYE
+
+;
+
+Dossier du 14/04/18
+Prélevé à : 09h00
+
+______________________________________________________________________________
+
+BIOCHIMIE (SANG)
+COBAS C501 ROCHE(Site de Mouy)
+Valeurs de référence
+
+Antérieurs
+
+DEBIT DE FILTRATION GLOMERULAIRE (formule CKD-EPI)
+En application de la nomenclature des actes de biologie médicale en date du 5 septembre 2014
+pour le diagnostic et le suivi de l insuffisance rénale chronique, l estimation du débit de filtration glomérulaire
+se fait par l équation CKD-EPI exprimée en ml/min/1.73m2 (Recommandations HAS décembre 2011)
+
+CREATININEMIE. . . . . . . . . . .
+(Technique colorimétrique)
+
+CKD-EPI en ml/min/1.73m2 :
+
+7,0 mg/l
+62,0 umol/l
+
+5,0 à 9,0
+44,3 à 79,7
+
+9,0
+30/08/17
+
+83.25
+
+En vue d une harmonisation avec les recommandations internationales,
+la classification rénale chronique est définie en six stades selon le DFG (ml/min/1,73 m2 de surface corporelle):
+Stade
+1
+2
+3A
+3B
+4
+5
+
+DFG
+sup ou égal à 90
+60-89
+45-59
+30-44
+15-29
+< 15
+
+Définition
+Maladie rénale chronique* avec DFG normal ou augmenté
+Maladie rénale chronique* avec DFG légèrement diminué
+Insuffisance rénale chronique modérée
+Insuffisance rénale chronique modérée
+Insuffisance rénale chronique sévère
+Insuffisance rénale chronique terminale
+
+* Avec marqueurs d atteinte rénale: albuminurie, hématurie, leucocyturie, ou anomalies morphologiques ou histologiques
+ou marqueurs de dysfonction tubulaire, persistant plus de 3 mois (et à deux ou trois examens consécutifs).
+(Recommendations HAS 2012)
+
+SODIUM . . . . . . . . . . . . . .
+
+145 mEq/l
+
+136 à 145
+
+143
+22/06/17
+
+4,9 mEq/l
+
+3,4 à 4,5
+
+4,1
+22/06/17
+
+105 mEq/l
+
+98 à 107
+
+103
+22/06/17
+
+(Technique ISE indirecte)
+
+POTASSIUM. . . . . . . . . . . .
+(Technique ISE indirecte )
+
+CHLORE . . . . . . . . . . . . . .
+(Technique ISE indirecte)
+
+Page 4/6
+Attention, résultats recto-verso
+
+Dossier validé par
+
+DAVID AFONSO
+
+<!Start>;V1=P;V2=2;V3=1804314103;V4=Mme
+;
+;V10=13 RUE VICTOR HUGO
+;V18=LC ;V21=16/04/18;V16=DA
+;V11=APPT 182 BAT MAINE
+;V14=CLERMONT
+;V12=60600 CLERMONT
+;
+;V13=60600;V23=14/04/18;V22=12H11;V17=CR;V5=THUILLIER LUCETTE
+;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-DR VERNAZ VIRGINIE
+-49 RUE W COUTELLIER
+-60600 CLERMONT
+01601
+/
+/MORA/HOP
+Patient(e) né(e) le 27/09/1939
+Sexe: F / DEVOYE
+Dossier N° 1804314103
+/ 14/04/18
+
+Mme THUILLIER LUCETTE
+13 RUE VICTOR HUGO
+APPT 182 BAT MAINE
+60600 CLERMONT
+
+Enregistré à 09h46 Prélevé le 14/04/18 à 09h00
+Prélevé par MR MORILLON ANTHONY
+Edition du 16/04/18 à 12H11 Résultat Complet
+
+EXPLORATION DUNE ANOMALIE LIPIDIQUE
+CHOLESTEROL TOTAL. . . . . . . . .
+
+2,33 g/l
+6,01 mmol/l
+
+1,40 à 2,35
+3,61 à 6,06
+
+2,31
+22/06/17
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption (Site de Mouy))
+Taux à interpréter en fonction de l age et des fractions HDL et LDL et des facteurs de risques
+A titre indicatif, en l absence de risque cardio vasculaire, normale < 2g/l) -Accord Pro-
+
+HDL CHOLESTEROL. . . . . . . .. .
+
+0,56 g/l
+
+0,50
+22/06/17
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption (Site de Mouy))
+
+TRIGLYCERIDES. . . . . . . . . .
+
+2,92 g/l
+3,33 mmol/l
+
+inf. à 1,50
+inf. à 1,71
+
+2,23
+22/06/17
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption (Site de Mouy))
+
+LDL CHOLESTEROL(calculé) . . . . .
+
+1,19 g/l
+
+ASPECT DU SERUM. . . . . . . . . .LEGEREMENT OPALESCENT
+Interprétation:
+La stratégie thérapeutique varie en fonction du risque cardio vasculaire défini
+par l outil SCORE et de la concentration en LDL-C (lipoprotéines de faible densité).
+L outil SCORE adopté par la HAS est la référence sauf chez les diabétiques, les insuffisants
+rénaux chroniques, les hypertendus sévères et en cas d hypercholestérolémie familiale.
+Stratégie:
+En cas de LDL cholestérol > 1,60 g/l (4,1 mmol/l) une modification du mode de vie est recommandée
+suivie d un controle trois mois après
+En plus des modifications liées au mode de vie, il est recommandé d instaurer un traitement hypolipémiant
+après ce controle en cas d objectif non atteint:
+- chez les sujets à risque faible (SCORE < 1%) si LDL-C > 1,9 g/l ou 4,9 mmol/l
+- chez les sujets à risque modéré (1 <= SCORE < 5%) si LDL-C > 1,3 g/l ou 3,4 mmol/l
+- chez les sujets à risque élevé (5 <= SCORE < 10%) si LDL-C >= 1 g/l ou 2,5 mmol/l
+débuter un traitement hypolipémiant
+- chez les sujets à risque très élevé (SCORE >= 10%) si LDL-C >= 0,7 g/l ou 1,8 mmol/l
+débuter un traitement hypolipémiant
+Chez les sujets avec un LDL-C > 1,9 g/l, il est recommandé de rechercher une hypercholestérolémie
+familiale hétérozygote.
+(HAS 2017: Principales dyslipidémies : stratégies de prise en charge)
+
+Page 5/6
+Attention, résultats recto-verso
+
+Dossier validé par
+
+DAVID AFONSO
+
+1,36
+22/06/17
+
+;
+
+<!Start>;V2=2;V3=1804314103;V4=Mme
+;V5=THUILLIER LUCETTE
+;V15=05 ;V16=DA ;V17=CRVERSO;<Stop!>
+1804314103 Mme THUILLIER LUCETTE
+Né(e) le 27/09/39 / DEVOYE
+
+;
+
+Dossier du 14/04/18
+Prélevé à : 09h00
+
+______________________________________________________________________________
+
+BIOCHIMIE URINAIRE
+Cobas Roche(Site de Mouy)
+Valeurs de référence
+
+- Recueil
+- Apporté le :
+
+Antérieurs
+
+Recueil apporté
+14/04/18
+
+MICROALBUMINURIE . . . . . . . . .
+
+3,7 mg/l
+
+inf. à 30,0
+
+(Technique Immunoturbidimétrique)
+
+Rapport albumine/créatinine .
+
+CREATININURIE. . . . . . . . . . .
+
+0,4 g/mol
+
+1054 mg/l
+
+(Technique colorimétrique)
+
+Analyse réalisée sur échantillon, urine matinale
+Prélèvement réalisé à lextérieur du laboratoire
+Heure de réception :
+09h15
+
+Page 6/6
+
+Dossier validé par:
+
+DAVID AFONSO
+
+740 à 1570
+
+543
+
+<!Start>;V1=P;V2=2;V3=1804314103;V4=Mme
+;V5=THUILLIER LUCETTE
+;
+;V17=HONO;V21=16/04/18;V22=12H11;V23=14/04/18;<Stop!>
+Mme THUILLIER LUCETTE
+13 RUE VICTOR HUGO
+APPT 182 BAT MAINE
+60600 CLERMONT
+
+Dossier N° 1804314103 du 14/04/18
+Prescrit par :
+DR VERNAZ VIRGINIE
+
+Le 16/04/18
+
+NOTE DHONORAIRES
+Montant à votre charge:
+
+0,00E
+
+Madame, Monsieur,
+Veuillez trouver ci-contre le détail du dossier
+concernant les examens de biologie du 14/04/18
+Prélèvements
+Déplacements
+Examens
+Ex.transmis
+Ex.non remboursés
+Frais
+
+Montants pris en charge par,
+- votre caisse
+39,69 E
+- votre mutuelle
+E
+Montant à régler à la phie:
+
+39,69
+
+E
+
+Montant à votre charge 0,00E
+
+Il est préférable de cumuler les frais denvoi et de ne régler quen fin de mois
+Afin de bénéficier du tiers payant, veuillez nous confirmer vos droits SECURITE SOCIALE ET MUTUELLE
+Si non, nous vous prions de nous faire parvenir vortre réglement.Nous vous adresserons alors le document nécessaire
+à votre remboursement.
+
+FICHE PERSONNELLE DIDENTIFICATION
+PATIENT
+Mme THUILLIER LUCETTE
+Nna:DEVOYE
+13 RUE VICTOR HUGO
+APPT 182 BAT MAINE
+60600 CLERMONT
+Téléphone : 03.44.50.68.06
+
+Identification préleveur:
+Date et heure prélèvement:
+Transmis par la pharmacie:
+Nbre de tubes: Sang
+Urines
+Date et heure de réception:
+Renseignements divers:
+
+DDN:27/09/39
+
+Sexe (F)
+
+Modifier les informations si nécessaire
+
+FICHE DE SUIVI MEDICALE
+
+ASSURE
+SS:239096045100253
+Mme THUILLIER LUCETTE
+Nna:DEVOYE
+
+Poids du patient:
+Med / Posologie :
+Dernière prise:
+DDR:
+Autre:
+Statut : q A jeun
+
+DDN:27/09/39
+
+Caisse:CPAM
+Mutuelle:
+100%:  ALD  INV  MAT
+Joindre photocopies de vos attestations
+en cas de modifications
+
+kg
+
+q Non à jeun
+
+RESULTATS
+q POSTE
+
+THUILLIER
+
+q LABO
+
+THUILLIER
+LUCETTE
+DEVOYE
+
+LUCETTE
+DEVOYE
+DDN:27/09/39
+
+PRELEVEMENT
+
+Sexe (F)
+
+DDN:27/09/39
+
+Sexe (F)
+
+q PHARMACIE
+
+q AUTRE
+
+q Numéro de fax :
+
+.
+
+.
+
+.
+
+.
+
+THUILLIER
+
+THUILLIER
+
+THUILLIER
+
+THUILLIER
+
+THUILLIER
+
+LUCETTE
+
+LUCETTE
+
+LUCETTE
+
+LUCETTE
+
+LUCETTE
+
+DEVOYE
+
+DEVOYE
+
+DEVOYE
+
+DEVOYE
+
+DDN:27/09/39
+
+Sexe (F)
+
+DDN:27/09/39
+
+Sexe (F)
+
+DDN:27/09/39
+
+Sexe (F)
+
+DDN:27/09/39
+
+GARDER CE DOCUMENT POUR VOTRE PROCHAIN PRELEVEMENT
+
+GARDER CE DOCUMENT POUR VOTRE PROCHAIN PRELEVEMENT
+
+" ---------------------------E&dà Fiche personnelle didentification à remplir et à joindre à votre prochain prélèvement -------
+
+DEVOYE
+Sexe (F)
+
+DDN:27/09/39
+
+Sexe (F)
+
+<!Start>;V1=P;V2=2;V3=1804314103;V4=Mme
+;
+;V5=THUILLIER LUCETTE
+;
+;V17=ORDO;V21=16/04/18;V22=12H11;V23=14/04/18;<Stop!>
+
+
