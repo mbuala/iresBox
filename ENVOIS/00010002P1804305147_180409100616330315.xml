@@ -1,0 +1,23 @@
+<?xml version=1.0 encoding=utf-8?>
+	<patient>
+		<NomCompletPatient>TARDIF LILIANE</NomCompletPatient>
+		<Nom>TARDIF</Nom>
+		<Prenom>LILIANE</Prenom>
+		<NumDossier>1804305147</NumDossier>
+		<Sexe>F</Sexe>
+		<DateNaissance>19/10/1942</DateNaissance>
+		<AdressePatient></AdressePatient>
+		<mailPatient></mailPatient>
+	</patient>
+	<medecin>
+		<NomCompletMedecin></NomCompletMedecin>
+		<NomMedecin></NomMedecin>
+		<PrenomMedecin></PrenomMedecin>
+		<EmailMedecin></EmailMedecin>
+		<EmailMedecin></EmailMedecin>
+	</medecin>
+	<labo>
+		<BioValidateur></BioValidateur>
+		<DateEdition></DateEdition>
+		<numPage>1</numPage>
+	</labo>

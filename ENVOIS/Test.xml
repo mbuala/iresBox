@@ -1,0 +1,53 @@
+<?xml version=1.0 encoding=utf-8?>
+	<patient>
+		<NomCompletPatient>THUILLIER LUCETTE
+THUILLIER LUCETTE
+THUILLIER LUCETTE
+THUILLIER LUCETTE
+THUILLIER LUCETTE
+THUILLIER LUCETTE</NomCompletPatient>
+		<Nom>THUILLIER
+THUILLIER
+THUILLIER
+THUILLIER
+THUILLIER
+THUILLIER</Nom>
+		<Prenom>LUCETTE
+LUCETTE
+LUCETTE
+LUCETTE
+LUCETTE
+LUCETTE</Prenom>
+		<NumDossier>1804314103
+1804314103
+1804314103
+1804314103</NumDossier>
+		<Sexe>F
+F
+F
+(F)
+(F)
+(F)
+(F)
+(F)
+(F)
+(F)
+(F)</Sexe>
+		<DateNaissance>27/09/1939
+27/09/1939
+27/09/1939</DateNaissance>
+		<AdressePatient></AdressePatient>
+		<mailPatient></mailPatient>
+	</patient>
+	<medecin>
+		<NomCompletMedecin></NomCompletMedecin>
+		<NomMedecin></NomMedecin>
+		<PrenomMedecin></PrenomMedecin>
+		<EmailMedecin></EmailMedecin>
+		<EmailMedecin></EmailMedecin>
+	</medecin>
+	<labo>
+		<BioValidateur></BioValidateur>
+		<DateEdition></DateEdition>
+		<numPage>8</numPage>
+	</labo>

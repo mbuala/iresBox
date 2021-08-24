@@ -1,0 +1,40 @@
+<?xml version=1.0 encoding=utf-8?>
+	<patient>
+		<NomCompletPatient>FESSAN VINCENZA
+FESSAN VINCENZA
+FESSAN VINCENZA
+FESSAN VINCENZA
+FESSAN VINCENZA</NomCompletPatient>
+		<Nom>FESSAN
+FESSAN
+FESSAN
+FESSAN
+FESSAN</Nom>
+		<Prenom>VINCENZA
+VINCENZA
+VINCENZA
+VINCENZA
+VINCENZA</Prenom>
+		<NumDossier>1804121068
+1804121068
+1804121068</NumDossier>
+		<Sexe>F
+F
+(F)</Sexe>
+		<DateNaissance>10/10/1966
+10/10/1966</DateNaissance>
+		<AdressePatient></AdressePatient>
+		<mailPatient></mailPatient>
+	</patient>
+	<medecin>
+		<NomCompletMedecin></NomCompletMedecin>
+		<NomMedecin></NomMedecin>
+		<PrenomMedecin></PrenomMedecin>
+		<EmailMedecin></EmailMedecin>
+		<EmailMedecin></EmailMedecin>
+	</medecin>
+	<labo>
+		<BioValidateur></BioValidateur>
+		<DateEdition></DateEdition>
+		<numPage>5</numPage>
+	</labo>
