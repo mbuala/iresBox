@@ -1,0 +1,740 @@
+<!Start>;V1=M1;V2=2;V3=1709315204;V4=Mr
+;V5=THIVIER JONATHAN
+;V10=POLYCLINIQUE ST COME
+;V11=7 RUE JJ BERNARD
+;V12=60200 COMPIEGNE
+;V13=60200;V14=COMPIEGNE
+;
+;V16=AL ;V17=CR;V18=PS ;V19=ALDKA ;V20=DR ALDABBAGH KAIS
+;V21=21/09/17;V22=12H45;V23=15/09/17;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-Mr THIVIER JONATHAN
+-307 RUE DE GOURNAY
+-60190 MOYENNEVILLE
+02601
+/
+/LANE/PHOC
+Patient(e) né(e) le 02/11/1986
+Sexe: M / THIVIER
+Dossier N° 1709315204
+/ 15/09/17
+
+DR ALDABBAGH KAIS
+POLYCLINIQUE ST COME
+7 RUE JJ BERNARD
+60200 COMPIEGNE
+
+Enregistré à 12h08 Prélevé le 15/09/17 à 10h00
+Prélevé par BOISSIER NATHALIE
+Edition du 21/09/17 à 12H45 Résultat Complet
+
+HEMATOLOGIE
+Valeurs de référence
+
+Antérieurs
+
+HEMOGRAMME
+XN 2000, Sysmex; analyse réalisée sur sang total (4)
+
+HEMATIES . . .
+Hémoglobine.
+Hématocrite.
+T.C.M.H. . .
+C.C.M.H. . .
+V.G.M. . . .
+
+.
+.
+.
+.
+.
+.
+
+LEUCOCYTES . . .
+Polynucléaires
+Polynucléaires
+Polynucléaires
+Lymphocytes.
+Monocytes.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+. . . . . .
+Neutrophiles.
+Eosinophiles.
+Basophiles.
+
+4.75
+14,6
+45,0
+30,7
+32,4
+94,7
+
+à
+à
+à
+à
+à
+à
+
+5.80
+17,0
+50,0
+32,0
+36,0
+97,0
+
+4.000 à 10.000
+1500 à 7000
+100 à 400
+inf. à 100
+1500 à 4000
+200 à 1000
+
+262.000 /mm3
+
+150.000 à 400.000
+
+Volume moyen plaquettaire ....
+
+Page 1/6
+
+4.50
+13,0
+40,0
+27,0
+32,0
+82,0
+
+8.480 /mm3
+59,4 %
+5040 /mm3
+6,6 %
+560 /mm3
+1,1 %
+90 /mm3
+22,3 %
+1890 /mm3
+10,6 %
+900 /mm3
+
+PLAQUETTES . . . . . . . . . .
+
+Attention, résultats recto-verso
+
+M/mm3
+g/100ml
+%
+picog.
+%
+u3
+
+Dossier validé par
+
+11,3 fL
+
+ABDUL AL KASSAR
+
+6,0 à 12,0
+
+18/08/17
+4.26
+12,8
+37,5
+30,0
+34,1
+88,0
+16.130
+11730
+110
+150
+2610
+1530
+
+256.000
+09/09/17
+11,1
+09/09/17
+
+<!Start>;V2=2;V3=1709315204;V4=Mr
+;V5=THIVIER JONATHAN
+;V15=05 ;V16=AL ;V17=CRVERSO;<Stop!>
+1709315204 Mr THIVIER JONATHAN
+Né(e) le 02/11/86 / THIVIER
+
+;
+
+Dossier du 15/09/17
+Prélevé à : 10h00
+
+______________________________________________________________________________
+
+ENZYMOLOGIE
+Technique colorimétrie enzymatique ROCHE(4); attention changement de technique le 21/04/10
+Valeurs normales a 37°C en fonction de l age et du sexe
+Valeurs de référence
+
+
+
+Antérieurs
+
+PROFIL ENZYMATIQUE HEPATOBILIAIRE
+GOT (ASAT) . . . . . . . . .
+
+
+
+32 UI/l
+
+
+
+23 UI/l
+
+inf. à 40
+
+19
+18/08/17
+
+inf. à 41
+
+51
+18/08/17
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption (4))
+
+GPT (ALAT) . . . . . . . . .
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption (4))
+
+PHOSPH.ALCALINES . . . . . . . . .
+
+54 UI/l
+
+40 à 130
+
+
+
+111
+18/08/17
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption (4))
+
+GAMMA GT. . . . . . . . . . . . .
+
+78 UI/l
+
+inf. à 60
+
+
+
+120
+18/08/17
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption (4))
+
+L.D.H. . . . . . . . . . . . . . .
+
+Page 2/6
+Attention, résultats recto-verso
+
+Dossier validé par
+
+204 UI/l
+
+ABDUL AL KASSAR
+
+135 à 225
+
+188
+18/08/17
+
+<!Start>;V1=M1;V2=2;V3=1709315204;V4=Mr
+;V5=THIVIER JONATHAN
+;V10=POLYCLINIQUE ST COME
+;V11=7 RUE JJ BERNARD
+;V12=60200 COMPIEGNE
+;V13=60200;V14=COMPIEGNE
+;
+;V16=AL ;V17=CR;V18=PS ;V19=ALDKA ;V20=DR ALDABBAGH KAIS
+;V21=21/09/17;V22=12H45;V23=15/09/17;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-Mr THIVIER JONATHAN
+-307 RUE DE GOURNAY
+-60190 MOYENNEVILLE
+02601
+/
+/LANE/PHOC
+Patient(e) né(e) le 02/11/1986
+Sexe: M / THIVIER
+Dossier N° 1709315204
+/ 15/09/17
+
+DR ALDABBAGH KAIS
+POLYCLINIQUE ST COME
+7 RUE JJ BERNARD
+60200 COMPIEGNE
+
+Enregistré à 12h08 Prélevé le 15/09/17 à 10h00
+Prélevé par BOISSIER NATHALIE
+Edition du 21/09/17 à 12H45 Résultat Complet
+
+BIOCHIMIE (SANG)
+COBAS C501 ROCHE(4); attention changement de technique le 21/04/10
+
+UREE . . . . . . . . . . . . . . .
+(Technique enzymatique)
+
+0,16 g/l
+2,66 mmol/l
+
+Valeurs de référence
+0,10 à 0,50
+1,66 à 8,30
+
+Antérieurs
+0,28
+18/08/17
+
+DEBIT DE FILTRATION GLOMERULAIRE (formule CKD-EPI)
+En application de la nomenclature des actes de biologie médicale en date du 5 septembre 2014
+pour le diagnostic et le suivi de l insuffisance rénale chronique, l estimation du débit de filtration glomérulaire
+se fait par l équation CKD-EPI exprimée en ml/min/1.73m2 (Recommandations HAS décembre 2011)
+
+
+
+
+
+CREATININEMIE. . . . . . . . . . .
+(Technique colorimétrique)
+
+CKD-EPI en ml/min/1.73m2 :
+
+
+
+7,0 mg/l
+62,0 umol/l
+
+7,0 à 12,0
+62,0 à 106,2
+
+126.64
+
+7,0
+18/08/17
+
+126.64
+18/08/17
+
+
+
+En vue d une harmonisation avec les recommandations internationales,
+la classification rénale chronique est définie en six stades selon le DFG (ml/min/1,73 m2 de surface corporelle):
+Stade
+1
+2
+3A
+3B
+4
+5
+
+DFG
+sup ou égal à 90
+60-89
+45-59
+30-44
+15-29
+< 15
+
+Définition
+Maladie rénale chronique* avec DFG normal ou augmenté
+Maladie rénale chronique* avec DFG légèrement diminué
+Insuffisance rénale chronique modérée
+Insuffisance rénale chronique modérée
+Insuffisance rénale chronique sévère
+Insuffisance rénale chronique terminale
+
+
+
+* Avec marqueurs d atteinte rénale: albuminurie, hématurie, leucocyturie, ou anomalies morphologiques ou histologiques
+ou marqueurs de dysfonction tubulaire, persistant plus de 3 mois (et à deux ou trois examens consécutifs).
+(Recommendations HAS 2012)
+
+SODIUM . . . . . . . . . . . . . .
+
+142 mEq/l
+
+136 à 145
+
+137
+18/08/17
+
+4,0 mEq/l
+
+3,4 à 4,5
+
+4,0
+18/08/17
+
+(Technique ISE indirecte)
+
+POTASSIUM. . . . . . . . . . . . .
+(Technique ISE indirecte )
+
+Page 3/6
+Attention, résultats recto-verso
+
+Dossier validé par
+
+ABDUL AL KASSAR
+
+<!Start>;V2=2;V3=1709315204;V4=Mr
+;V5=THIVIER JONATHAN
+;V15=05 ;V16=AL ;V17=CRVERSO;<Stop!>
+1709315204 Mr THIVIER JONATHAN
+Né(e) le 02/11/86 / THIVIER
+
+;
+
+Dossier du 15/09/17
+Prélevé à : 10h00
+
+______________________________________________________________________________
+CALCIUM . . . . . . . . . . . . .
+98 mg/l
+88 à 102
+92
+2,45 mmol/l
+2,20 à 2,55
+18/08/17
+(Technique colorimétrique)
+Le dosage du calcium sanguin devrait etre complété par celui de l albunminémie pour interpréter la calcémie
+
+
+
+ALBUMINEMIE. . . . . . . . . . . .
+
+47,0 g/l
+
+(COBAS C501 ROCHE)(4)
+(attention changement de technique le 21.04.10)
+
+Références
+
+CALCIUM CORRIGE
+
+92,4 mg/l
+2,31 mmol/l
+
+PHOSPHORE. . . . . . . . . . . . .
+
+29,0
+0,94
+
+(Technique colorimétrique)
+
+MAGNESIUM PLASMATIQUE . . . . . .
+(Technique colorimétrique)
+
+BILIRUBINE TOTALE. . . . . . . . .
+(Technique colorimétrique)
+
+- BILIRUBINE CONJUGUEE. . . . . .
+(Technique colorimétrique)
+
+- BILIRUBINE LIBRE. . . . . . . .
+
+Page 4/6
+Attention, résultats recto-verso
+
+Dossier validé par
+
+35,0 à 50,0
+
+mg/l
+mmol/l
+
+Antécédents
+
+87,2
+18/08/17
+27,0 à 45,0
+0,87 à 1,45
+
+30,0
+18/08/17
+
+20,3 mg/l
+0,84 mmol/l
+
+17,0 à 25,5
+0,70 à 1,05
+
+19,4
+18/08/17
+
+2,8 mg/l
+4,8 umol/l
+
+1,0 à 17,0
+1,7 à 29,1
+
+1,5
+18/08/17
+
+1,7 mg/l
+2,9 umol/l
+
+inf. à 3,4
+inf. à 5,8
+
+1,0
+18/08/17
+
+1,1 mg/l
+1,9 umol/l
+
+inf. à 8,0
+inf. à 13,7
+
+0,5
+18/08/17
+
+ABDUL AL KASSAR
+
+<!Start>;V1=M1;V2=2;V3=1709315204;V4=Mr
+;V5=THIVIER JONATHAN
+;V10=POLYCLINIQUE ST COME
+;V11=7 RUE JJ BERNARD
+;V12=60200 COMPIEGNE
+;V13=60200;V14=COMPIEGNE
+;
+;V16=AL ;V17=CR;V18=PS ;V19=ALDKA ;V20=DR ALDABBAGH KAIS
+;V21=21/09/17;V22=12H45;V23=15/09/17;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-Mr THIVIER JONATHAN
+-307 RUE DE GOURNAY
+-60190 MOYENNEVILLE
+02601
+/
+/LANE/PHOC
+Patient(e) né(e) le 02/11/1986
+Sexe: M / THIVIER
+Dossier N° 1709315204
+/ 15/09/17
+
+DR ALDABBAGH KAIS
+POLYCLINIQUE ST COME
+7 RUE JJ BERNARD
+60200 COMPIEGNE
+
+Enregistré à 12h08 Prélevé le 15/09/17 à 10h00
+Prélevé par BOISSIER NATHALIE
+Edition du 21/09/17 à 12H45 Résultat Complet
+
+PROTEINES - MARQUEURS - VITAMINES
+Valeurs de référence
+
+VITAMINE D (D2+D3)
+
+16,70 ng/ml
+41,75 nmol/l
+
+Technique Chimiluminescence, Liaison Diasorin (3)
+(analyse réalisée sur sérum)
+permet d évaluer le statut vitaminique D
+concentrations souhaitables 30-80 ng/ml soit 75 à 200 nmol/l
+insuffisance < 30 ng/ml
+aucun signe d intoxication en dessous de 150 ng/ml (375 nmol/l)
+à confronter aux données cliniques et biologiques
+
+
+
+
+
+Attention, changement de technique et valeurs de références le 06 Juin 2009
+
+Page 5/6
+Attention, résultats recto-verso
+
+Dossier validé par
+
+ABDUL AL KASSAR
+
+Antérieurs
+18/08/17
+18,50
+
+<!Start>;V2=2;V3=1709315204;V4=Mr
+;V5=THIVIER JONATHAN
+;V15=05 ;V16=AL ;V17=CRVERSO;<Stop!>
+1709315204 Mr THIVIER JONATHAN
+Né(e) le 02/11/86 / THIVIER
+
+;
+
+Dossier du 15/09/17
+Prélevé à : 10h00
+
+______________________________________________________________________________
+DOSAGE DE L ALPHA-FOETOPROTEINE
+Cobas E601 Roche (ECL) (4); attention changement de technique le 21/04/10
+
+A.F.P. . . . . . . .
+
+1,8 UI/ml
+2,2 ng/ml
+
+inf. à 5,8
+inf. à 7,1
+
+HORMONOLOGIE
+Technique ECL ROCHE (4); attention changement de technique et de valeurs de référence le 21/04/10
+Valeurs de référence
+
+TESTOSTERONE . . . . . . . . .
+
+8,89 ng/ml
+
+Tableau des valeurs de référence
+
+
+
+Chez l homme
+Chez la femme
+Chez le garcon
+- < 1 ans
+- de 1 à 6 ans
+- de 7 à 12 ans
+- de 13 à 17 ans
+
+!
+!
+
+2,8 à 8,0
+ng/ml
+0,06 à 0,82 ng/ml
+
+!
+!
+
+!
+!
+!
+!
+
+0,12
+0,03
+0,03
+0,28
+
+!
+!
+!
+!
+
+à
+à
+à
+à
+
+0,21
+0,32
+0,68
+11,1
+
+ng/ml
+ng/ml
+ng/ml
+ng/ml
+
+EXAMEN TRANSMIS
+hCG - chaine beta libre - sous unité - Sérum
+voir CR laboratoire spécialisé
+
+Prélèvement réalisé à lextérieur du laboratoire
+Heure de réception :
+12H
+Page 6/6
+
+Dossier validé par:
+
+ABDUL AL KASSAR
+
+Antérieurs
+7,21
+18/08/17
+
+<!Start>;V1=M1;V2=2;V3=1709315204;V4=Mr
+;V5=THIVIER JONATHAN
+;V17=BIOMNIS;V19=ALDKA ;V20=DR ALDABBAGH KAIS
+;V21=21/09/17;V22=12H45;V23=15/09/17;<Stop!>
+
+;
+;
+
+

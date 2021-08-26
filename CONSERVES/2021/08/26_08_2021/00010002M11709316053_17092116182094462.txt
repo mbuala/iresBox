@@ -1,0 +1,468 @@
+<!Start>;V1=M1;V2=2;V3=1709316053;V4=Mr
+;V5=BLAIRET PATRICK
+;V10=12 AVE DU GAL LECLERC
+;V11=BP30239
+;V12=60631 CHANTILLY CEDEX
+;V13=60631;V14=CHANTILLY CEDEX
+;
+;V16=AL ;V17=CR;V18=WTT ;V19=DELMP ;V20=DR DELLION-LOZINGUEZ M-P
+;V21=21/09/17;V22=16H18;V23=16/09/17;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-Mr BLAIRET PATRICK
+-36 AV GAMBETTA
+-60600 CLERMONT
+01601
+/CCMO
+/LABO/N
+Patient(e) né(e) le 01/08/1970
+Sexe: M / BLAIRET
+Dossier N° 1709316053
+/ 16/09/17
+
+DR DELLION-LOZINGUEZ M-P
+12 AVE DU GAL LECLERC
+BP30239
+60631 CHANTILLY CEDEX
+
+Enregistré à 09h01 Prélevé le 16/09/17 à 09h02
+Prélevé par Mme LAGRUE-CALVEZ C
+Edition du 21/09/17 à 16H18 Résultat Complet
+
+HEMATOLOGIE
+Valeurs de référence
+
+Antérieurs
+
+HEMOGRAMME
+XN 2000, Sysmex; analyse réalisée sur sang total (4)
+
+HEMATIES . . .
+Hémoglobine.
+Hématocrite.
+T.C.M.H. . .
+C.C.M.H. . .
+V.G.M. . . .
+
+.
+.
+.
+.
+.
+.
+
+LEUCOCYTES . . .
+Polynucléaires
+Polynucléaires
+Polynucléaires
+Lymphocytes.
+Monocytes.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+. . . . . .
+Neutrophiles.
+Eosinophiles.
+Basophiles.
+
+4.90
+13,9
+41,2
+28,4
+33,7
+84,1
+
+M/mm3
+g/100ml
+%
+picog.
+%
+u3
+
+4.50
+13,0
+40,0
+27,0
+32,0
+82,0
+
+à
+à
+à
+à
+à
+à
+
+5.80
+17,0
+50,0
+32,0
+36,0
+97,0
+
+4.010 /mm3
+41,9 %
+1680 /mm3
+1,5 %
+60 /mm3
+0,5 %
+20 /mm3
+46,1 %
+1850 /mm3
+10,0 %
+400 /mm3
+
+4.000 à 10.000
+1500 à 7000
+100 à 400
+inf. à 100
+1500 à 4000
+200 à 1000
+
+226.000 /mm3
+
+150.000 à 400.000
+
+PLAQUETTES . . . . . . . . . .
+Volume moyen plaquettaire ....
+
+10,1 fL
+
+6,0 à 12,0
+
+07/05/16
+4.91
+14,2
+44,1
+28,9
+32,2
+89,8
+4.710
+2160
+80
+20
+2010
+440
+
+198.000
+07/05/16
+10,0
+07/05/16
+
+VITESSE DE SEDIMENTATION
+Ière heure . . . . . . . . . . .
+
+Page 1/4
+Attention, résultats recto-verso
+
+Dossier validé par
+
+5
+
+mm
+
+ABDUL AL KASSAR
+
+inf. à 8
+
+4
+19/03/16
+
+<!Start>;V2=2;V3=1709316053;V4=Mr
+;V5=BLAIRET PATRICK
+;V15=05 ;V16=AL ;V17=CRVERSO;<Stop!>
+1709316053 Mr BLAIRET PATRICK
+Né(e) le 01/08/70 / BLAIRET
+
+;
+
+Dossier du 16/09/17
+Prélevé à : 09h02
+
+______________________________________________________________________________
+
+BIOCHIMIE (SANG)
+COBAS C501 ROCHE(4); attention changement de technique le 21/04/10
+
+UREE . . . . . . . . . . . . . . .
+(Technique enzymatique)
+
+0,29 g/l
+4,81 mmol/l
+
+Valeurs de référence
+0,10 à 0,50
+1,66 à 8,30
+
+Antérieurs
+
+DEBIT DE FILTRATION GLOMERULAIRE (formule CKD-EPI)
+En application de la nomenclature des actes de biologie médicale en date du 5 septembre 2014
+pour le diagnostic et le suivi de linsuffisance rénale chronique, lestimation du débit de filtration glomérulaire
+se fait par léquation CKD-EPI exprimée en ml/min/1.73m2 (Recommandations HAS décembre 2011)
+
+CREATININEMIE. . . . . . . . . . .
+(Technique colorimétrique)
+
+CKD-EPI en ml/min/1.73m2 :
+
+8,0 mg/l
+70,8 umol/l
+
+7,0 à 12,0
+62,0 à 106,2
+
+106.38
+
+8,0
+17/10/15
+
+107.88
+17/10/15
+
+En vue dune harmonisation avec les recommandations internationales,
+la classification rénale chronique est définie en six stades selon le DFG (ml/min/1,73 m2 de surface corporelle):
+Stade
+1
+2
+3A
+3B
+4
+5
+
+DFG
+sup ou égal à 90
+60-89
+45-59
+30-44
+15-29
+< 15
+
+Définition
+Maladie rénale chronique* avec DFG normal ou augmenté
+Maladie rénale chronique* avec DFG légèrement diminué
+Insuffisance rénale chronique modérée
+Insuffisance rénale chronique modérée
+Insuffisance rénale chronique sévère
+Insuffisance rénale chronique terminale
+
+* Avec marqueurs datteinte rénale: albuminurie, hématurie, leucocyturie, ou anomalies morphologiques ou histologiques
+ou marqueurs de dysfonction tubulaire, persistant plus de 3 mois (et à deux ou trois examens consécutifs).
+(Recommendations HAS 2012)
+
+SODIUM . . . . . . . . . . . . . .
+
+138 mEq/l
+
+136 à 145
+
+144
+17/10/15
+
+4,2 mEq/l
+
+3,4 à 4,5
+
+4,4
+17/10/15
+
+104 mEq/l
+
+98 à 107
+
+107
+17/10/15
+
+(Technique ISE indirecte)
+
+POTASSIUM. . . . . . . . . . . . .
+(Technique ISE indirecte )
+
+CHLORE . . . . . . . . . . . . . .
+(Technique ISE indirecte)
+
+Page 2/4
+Attention, résultats recto-verso
+
+Dossier validé par
+
+ABDUL AL KASSAR
+
+<!Start>;V1=M1;V2=2;V3=1709316053;V4=Mr
+;V5=BLAIRET PATRICK
+;V10=12 AVE DU GAL LECLERC
+;V11=BP30239
+;V12=60631 CHANTILLY CEDEX
+;V13=60631;V14=CHANTILLY CEDEX
+;
+;V16=AL ;V17=CR;V18=WTT ;V19=DELMP ;V20=DR DELLION-LOZINGUEZ M-P
+;V21=21/09/17;V22=16H18;V23=16/09/17;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-Mr BLAIRET PATRICK
+-36 AV GAMBETTA
+-60600 CLERMONT
+01601
+/CCMO
+/LABO/N
+Patient(e) né(e) le 01/08/1970
+Sexe: M / BLAIRET
+Dossier N° 1709316053
+/ 16/09/17
+
+DR DELLION-LOZINGUEZ M-P
+12 AVE DU GAL LECLERC
+BP30239
+60631 CHANTILLY CEDEX
+
+Enregistré à 09h01 Prélevé le 16/09/17 à 09h02
+Prélevé par Mme LAGRUE-CALVEZ C
+Edition du 21/09/17 à 16H18 Résultat Complet
+
+PROTEINES - MARQUEURS - VITAMINES
+PROTEINE C REACTIVE . . . . . . . < 5 mg/l
+
+Valeurs de référence
+inf. à 5,00
+
+(Technique turbidimétrique Roche Cobas C501) (4)
+
+P.S.A . . . . . . . . . . . . . .
+
+0,380 ng/ml
+
+(Technique ECL ROCHE ) (4)
+Seuil: 0,003 ng/ml
+Attention changement de technique au 21.04.10)
+Valeurs de références:
+<49 ans: <2 ng/ml
+49-60 ans: <3 ng/ml
+60-70 ans : <4 ng/ml
+>70 ans : <4,4 ng/ml
+Pour un PSA total supérieur aux valeurs statistiquement normales, en fonction
+des facteurs de risque et de la clinique, le dosage du PSA libre est conseillé.
+
+Page 3/4
+Attention, résultats recto-verso
+
+Dossier validé par
+
+ABDUL AL KASSAR
+
+inf. à 2,000
+
+Antérieurs
+< 5 mg/l
+19/03/16
+
+<!Start>;V2=2;V3=1709316053;V4=Mr
+;V5=BLAIRET PATRICK
+;V15=05 ;V16=AL ;V17=CRVERSO;<Stop!>
+1709316053 Mr BLAIRET PATRICK
+Né(e) le 01/08/70 / BLAIRET
+
+;
+
+Dossier du 16/09/17
+Prélevé à : 09h02
+
+______________________________________________________________________________
+
+AUTO IMMUNITE
+Valeurs de référence
+
+Ac anti transglutaminase tissulaire (IgA)
+(ELIA - Immunocap 2500 - Phadia)(3)
+
+Résultat:
+
+< 7 UI/ml
+
+Ac anti transglutaminase tissulaire (IgG)
+(ELIA - Immunocap 2500 - Phadia)(3)
+
+Résultat:
+Interprétation
+Sérodiagnostic
+Sérodiagnostic
+Sérodiagnostic
+
+< 7 UI/ml
+des résultats:
+négatif:
+< 7 U/ml
+douteux: 7 à 10 U/ml
+positif:
+> 10 U/ml
+
+Conformément à la nomenclature(arreté paru au JO le 25/11/08), le titrage des autoanticorps
+anti-transglutaminase de classe IgG est indiqué en première intention , chez les adultes et les enfants
+suspectés de maladie coeliaque ayant un déficit en IgA connu, et dont lalimentation nexclut pas
+le gluten.
+
+Page 4/4
+
+Dossier validé par:
+
+ABDUL AL KASSAR
+
+Antérieurs
+
+

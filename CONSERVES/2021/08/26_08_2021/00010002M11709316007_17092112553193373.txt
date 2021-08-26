@@ -1,0 +1,598 @@
+<!Start>;V1=M1;V2=2;V3=1709316007;V4=Mme
+;V5=BIDAULT NADINE
+;V10=HOP DE CREIL BP 72
+;V11=SERVICE NEPHROLOGIE
+;V12=60109 CREIL CEDEX
+;V13=60109;V14=CREIL CEDEX
+;
+;V16=AL ;V17=CR;V18=PS ;V19=FIEPA ;V20=DR FIEVET PATRICK
+;V21=21/09/17;V22=12H45;V23=16/09/17;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-Mme BIDAULT NADINE
+-368 RUE MARCEAU ANSELME
+-RONQUEROLLES 60600 AGNETZ
+01601
+/ISANTE /LABO/EN
+Patient(e) né(e) le 08/10/1957
+Sexe: F / DELCUS
+Dossier N° 1709316007
+/ 16/09/17
+
+DR FIEVET PATRICK
+HOP DE CREIL BP 72
+SERVICE NEPHROLOGIE
+60109 CREIL CEDEX
+
+Enregistré à 07h39 Prélevé le 16/09/17 à 07h40
+Prélevé par Melle PIRES Marie-Ca
+Edition du 21/09/17 à 12H45 Résultat Complet
+
+HEMATOLOGIE
+Valeurs de référence
+
+Antérieurs
+
+HEMOGRAMME
+XN 2000, Sysmex; analyse réalisée sur sang total (4)
+
+HEMATIES . . .
+Hémoglobine.
+Hématocrite.
+T.C.M.H. . .
+C.C.M.H. . .
+V.G.M. . . .
+
+.
+.
+.
+.
+.
+.
+
+LEUCOCYTES . . .
+Polynucléaires
+Polynucléaires
+Polynucléaires
+Lymphocytes.
+Monocytes.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+. . . . . .
+Neutrophiles.
+Eosinophiles.
+Basophiles.
+
+4.43
+13,2
+42,3
+29,8
+31,2
+95,5
+
+à
+à
+à
+à
+à
+à
+
+5.20
+15,5
+47,0
+32,0
+36,0
+97,0
+
+4.000 à 10.000
+1500 à 7000
+100 à 400
+inf. à 100
+1500 à 4000
+200 à 1000
+
+269.000 /mm3
+
+150.000 à 400.000
+
+Volume moyen plaquettaire ....
+
+Page 1/3
+
+4.00
+12,5
+37,0
+27,0
+32,0
+80,0
+
+6.910 /mm3
+47,0 %
+3250 /mm3
+2,3 %
+160 /mm3
+0,6 %
+40 /mm3
+40,4 %
+2790 /mm3
+9,7 %
+670 /mm3
+
+PLAQUETTES . . . . . . . . . .
+
+Attention, résultats recto-verso
+
+M/mm3
+g/100ml
+%
+picog.
+%
+u3
+
+Dossier validé par
+
+9,8 fL
+
+ABDUL AL KASSAR
+
+6,0 à 12,0
+
+01/06/17
+4.57
+13,5
+42,7
+29,5
+31,6
+93,4
+6.560
+2790
+90
+20
+2960
+700
+
+298.000
+01/06/17
+10,0
+01/06/17
+
+<!Start>;V2=2;V3=1709316007;V4=Mme
+;V5=BIDAULT NADINE
+;V15=05 ;V16=AL ;V17=CRVERSO;<Stop!>
+1709316007 Mme BIDAULT NADINE
+Né(e) le 08/10/57 / DELCUS
+
+;
+
+Dossier du 16/09/17
+Prélevé à : 07h40
+
+______________________________________________________________________________
+
+BIOCHIMIE (SANG)
+COBAS C501 ROCHE(4); attention changement de technique le 21/04/10
+Valeurs de référence
+
+Antérieurs
+
+DEBIT DE FILTRATION GLOMERULAIRE (formule CKD-EPI)
+En application de la nomenclature des actes de biologie médicale en date du 5 septembre 2014
+pour le diagnostic et le suivi de l insuffisance rénale chronique, l estimation du débit de filtration glomérulaire
+se fait par l équation CKD-EPI exprimée en ml/min/1.73m2 (Recommandations HAS décembre 2011)
+
+
+
+
+
+CREATININEMIE. . . . . . . . . .
+(Technique colorimétrique)
+
+CKD-EPI en ml/min/1.73m2 :
+
+
+
+10,0 mg/l
+88,5 umol/l
+
+5,0 à 9,0
+44,3 à 79,7
+
+10,0
+01/06/17
+
+61.81
+
+61.81
+01/06/17
+
+
+
+En vue d une harmonisation avec les recommandations internationales,
+la classification rénale chronique est définie en six stades selon le DFG (ml/min/1,73 m2 de surface corporelle):
+Stade
+1
+2
+3A
+3B
+4
+5
+
+DFG
+sup ou égal à 90
+60-89
+45-59
+30-44
+15-29
+< 15
+
+Définition
+Maladie rénale chronique* avec DFG normal ou augmenté
+Maladie rénale chronique* avec DFG légèrement diminué
+Insuffisance rénale chronique modérée
+Insuffisance rénale chronique modérée
+Insuffisance rénale chronique sévère
+Insuffisance rénale chronique terminale
+
+
+
+* Avec marqueurs d atteinte rénale: albuminurie, hématurie, leucocyturie, ou anomalies morphologiques ou histologiques
+ou marqueurs de dysfonction tubulaire, persistant plus de 3 mois (et à deux ou trois examens consécutifs).
+(Recommendations HAS 2012)
+
+SODIUM . . . . . . . . . . . . . .
+
+143 mEq/l
+
+136 à 145
+
+138
+31/03/08
+
+4,1 mEq/l
+
+3,4 à 4,5
+
+4,7
+31/03/08
+
+102 mEq/l
+
+98 à 107
+
+108
+31/03/08
+
+(Technique ISE indirecte)
+
+POTASSIUM. . . . . . . . . . . . .
+(Technique ISE indirecte )
+
+CHLORE . . . . . . . . . . . . . .
+(Technique ISE indirecte)
+
+RESERVE ALCALINE . . . . . . . . .
+
+26 mEq/l
+
+22 à 29
+
+(Technique enzymatique)
+
+CALCIUM . . . . . . . . . . . . .
+
+96 mg/l
+2,40 mmol/l
+
+84 à 97
+2,10 à 2,43
+
+98
+30/05/13
+
+(Technique colorimétrique)
+Le dosage du calcium sanguin devrait etre complété par celui de l albunminémie pour interpréter la calcémie
+
+
+
+ALBUMINEMIE. . . . . . . . . . . .
+
+45,0 g/l
+
+(COBAS C501 ROCHE)(4)
+(attention changement de technique le 21.04.10)
+
+Références
+
+CALCIUM CORRIGE
+
+92,0 mg/l
+2,30 mmol/l
+
+PHOSPHORE. . . . . . . . . . . . .
+
+40,0
+1,29
+
+(Technique colorimétrique)
+
+Page 2/3
+Attention, résultats recto-verso
+
+Dossier validé par
+
+35,0 à 50,0
+
+mg/l
+mmol/l
+
+ABDUL AL KASSAR
+
+Antécédents
+
+94,0
+30/05/13
+27,0 à 45,0
+0,87 à 1,45
+
+<!Start>;V1=M1;V2=2;V3=1709316007;V4=Mme
+;V5=BIDAULT NADINE
+;V10=HOP DE CREIL BP 72
+;V11=SERVICE NEPHROLOGIE
+;V12=60109 CREIL CEDEX
+;V13=60109;V14=CREIL CEDEX
+;
+;V16=AL ;V17=CR;V18=PS ;V19=FIEPA ;V20=DR FIEVET PATRICK
+;V21=21/09/17;V22=12H45;V23=16/09/17;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-Mme BIDAULT NADINE
+-368 RUE MARCEAU ANSELME
+-RONQUEROLLES 60600 AGNETZ
+01601
+/ISANTE /LABO/EN
+Patient(e) né(e) le 08/10/1957
+Sexe: F / DELCUS
+Dossier N° 1709316007
+/ 16/09/17
+
+DR FIEVET PATRICK
+HOP DE CREIL BP 72
+SERVICE NEPHROLOGIE
+60109 CREIL CEDEX
+
+Enregistré à 07h39 Prélevé le 16/09/17 à 07h40
+Prélevé par Melle PIRES Marie-Ca
+Edition du 21/09/17 à 12H45 Résultat Complet
+
+PROTEINES - MARQUEURS - VITAMINES
+Valeurs de référence
+
+Antérieurs
+
+PROTIDOGRAMME
+Protides totaux. . . . . . . . . .
+
+72,5 g/l
+
+Albumine . . . . .
+Alpha 1 Globulines
+Alpha 2 Globulines
+Beta 1 Globulines.
+Beta 2 Globulines.
+Gamma Globulines .
+Rapport A/G. . . .
+
+% 41,36
+%
+4,47
+%
+7,08
+%
+3,85
+%
+3,31
+% 12,43
+1,33
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+57,05
+6,17
+9,77
+5,31
+4,56
+17,14
+
+total
+
+66,0 à 87,0
+
+g/l
+g/l
+g/l
+g/l
+g/l
+g/l
+
+36,90
+2,50
+4,50
+3,60
+1,50
+6,10
+1,22
+
+à
+à
+à
+à
+à
+à
+à
+
+47,20
+5,60
+8,00
+5,80
+5,60
+12,60
+2,00
+
+100,0 %
+
+COMMENTAIRE :
+Présence d une bande homogène dans la zone des gammaglobulines, Valeur
+semi-quantitative : 3.06 g/L
+
+IMMUNOELECTROPHORESE (immunofixation)
+COMMENTAIRE :
+
+Présence d une immunoglobuline monoclonale de type IGG KAPPA
+
+PROFIL PROTEIQUE IMMUNITAIRE (IGG,IGM,IGA)
+
+
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption immunoturbidimétrie (4))
+
+Ig G . . . . . . . . . . . . . .
+
+
+
+12,57 g/l
+
+7,00 à 16,00
+
+Cobas E501 Roche (spectrophotométrie d absorption immunoturbidimétrie (4)
+
+Ig M . . . . . . . . . . . . . .
+
+
+
+1,42 g/l
+
+0,40 à 2,30
+
+Cobas E501 Roche (spectrophotométrie d absorption immunoturbidimétrie (4)
+
+Ig A . . . . . . . . . . . . . .
+
+
+
+1,81 g/l
+
+Cobas E501 Roche (spectrophotométrie d absorption immunoturbidimétrie (4)
+
+Page 3/3
+
+Dossier validé par:
+
+ABDUL AL KASSAR
+
+0,70 à 4,00
+
+

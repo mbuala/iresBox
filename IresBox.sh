@@ -1,6 +1,5 @@
-		#!/usr/bin/env bash
-
-
+		#!/usr/bin/env 
+		. ./DataBaseParameters.sh --source-only
 		function main(){
 		#DATABASE PARAMETRES
 		DATABASE="iresbox"
@@ -21,16 +20,22 @@
 		dirArchives="ARCHIVES";
 		dirConserves="CONSERVES";
 		dirLogs="LOGS";
-		dirCalques="CALQUES";
+		dirCalques="CALQUES";###########
+		dirEnvoie="ENVOIS";	
+		dirFait="FAIT";
+		dirEnAttente="ENATTENTE"
+		dateFIle="$(date +%Y%m%d)";
+		day=$(date +%d);
+	    month=$(date +%m);
+		year=$(date +%Y);
 
 		#récupération des parametres dans la base de donnée
-
-		calqueEntete=$(selectData "SELECT path FROM entetepage;")
-		calquePiedPage=$(selectData  "SELECT path FROM piedpage;") 
-		calqueSignature=$(selectData  "SELECT path FROM signature;") 
+		calqueEntete=$(selectData "SELECT path FROM entetepage;");
+		calquePiedPage=$(selectData  "SELECT path FROM piedpage;");
+		calqueSignature=$(selectData  "SELECT path FROM signature;");
 
 		dateProg="$(date +%d-%m-%Y' '%H:%M:%S)";
-		dateRep="$(date +%d-%m-%Y)";
+		dateRep="$(date +%d_%m_%Y)";
 		nomFileLog="LOG_"$nomSource"_"$(date +%d_%m_%Y);
 		pile=10; #Nombre de fichiers a traiter par passage
 		dateInsrt="$(date +%Y-%m-%d' '%H:%M:%S)";	
@@ -39,17 +44,33 @@
 		nbFileIn=`find $dirIn -type f -iname "*.pdf" | wc -l`;
 		nbFileWork=`find $dirWork -type f -iname "*.pdf" | wc -l`;
 
+
+		#Argument pour verifier si calque inserer
+		verifInsertCalque=false;
+		verifInsertSIgnature=false
+		verifInsertPiedPage=false
+
 		#Generation fichier log
 		creatLogFile;
 
-
-		if [ $nbFileWork != 0 ]; then
-
-			echo "work"
-		elif [ $nbFileIn != 0 ]; then
+		nbPage=""
+		nomPatient="";
+		adressePatient="":
+		sexe="";
+		dateDeNaissance="";
+		emailPatient="";
+		emailMedecin="";
+		medecin="";
+		bioValideur="";
+		
+		if [ $nbFileIn != 0 ]; then
+			echo "";
 			traitementPdf;
-		else
-			traitementPdf;
+		elif [ $nbFileWork == 0 ]; then
+			#TO DO
+			zip $dirEnvoie/$dirFait/$year/$month/$dateRep/dateRep.zip $dirEnvoie/$dirFait/$year/$month/$dateRep/$dateFIle.xml 
+			OUTPUT=$(selectData "SELECT * FROM compterendubox WHERE datecreation='$dateInsrt';")	
+			
 		fi;
 
 
@@ -65,6 +86,7 @@
 		    	filesWork=`ls $dirWork/*.pdf`;
 		    	nbFileIn=`find $dirIn -type f -iname "*.pdf" | wc -l`;
 		    	for file in $filesWork; do	
+
 		    		extractionData ;  
 		    	done;
 
@@ -81,112 +103,124 @@
 		}
 
 		function extractionData(){
+			echo "extractionData"
 			nameFile=$(basename $file .${file##*.});
-			nbPage=""
-			nomPatient="";
-			adressePatient="":
-			sexe="";
-			dateDeNaissance="";
-			emailPatient="";
-			emailMedecin="";
-			medecin="";
-			bioValideur="";
+			
 
 			#Conversion pdftotext		
 			pdftotext $dirWork/$nameFile.pdf
+
 			#-e $nomfichier Vérifie si le fichier existe.
 			#-n $chaine Vérifie si la chaîne est non vide.
 			if [ -e $dirWork/$nameFile.txt ]; then
 				#extraire les données
-				#utilisé les commande d'extraction grep -E
-				#EXTRACTION DES DONNÉES DANS LE FICHIER TXT
-				numeroDossier=$(grep -E "^Dossier N°" $dirWork/$nameFile.txt | awk {'print $3'})
-				nomPatient=$(grep -E "^Mme" $dirWork/$nameFile.txt | awk {'print  $2" "$3 '})
-				sexe=$(grep -E "^Sexe" $dirWork/$nameFile.txt | awk {'print $2'})
-				nbPage=$(pdfinfo  $dirWork/$nameFile.pdf | grep Pages | awk '{print $2}');
-
-				adressePatient="marrakech" 				
-				dateDeNaissance="1992-08-11" 
+				numeroDossier=$(grep -E -m 1 "^Dossier N°" $dirWork/$nameFile.txt | awk {'print $3'});
+				nbPage=$(pdfinfo  $dirWork/$nameFile.pdf | grep Pages | awk '{print $2}');	
+				#PATIENT
+				nomPatient=$(grep -E -m 1 "^Mme|^Mr|^Mlle|^-Mme|^-Mlle|^-Mr" $dirWork/$nameFile.txt | awk {'print  $2" "$3 '});
+				nom=$(grep -E -m 1 "^Mme|^Mr|^Mlle|^-Mme|^-Mlle|^-Mr" $dirWork/$nameFile.txt | awk {'print  $2 '});
+				prenom=$(grep -E -m 1 "^Mme|^Mr|^Mlle|^-Mme|^-Mlle|^-Mr" $dirWork/$nameFile.txt | awk {'print  $3 '});
+				sexe=$(grep -E -m 1 "^Sexe" $dirWork/$nameFile.txt | awk {'print $2'});
+				dateDeNaissance=$(grep -E -m 1 "né\(e\) le" $dirWork/$nameFile.txt | awk {'print  $4'});
+				adressePatient="marrakech" 	
 				emailPatient="test@test.com" 
+
+				#MEDECIN
 				emailMedecin="medecin@test.com"
 				medecin="medecin" 
 				bioValideur="bio"
-				datecreation=""
+				datecreation=""			
 				
-				if [ -n "$numeroDossier" ] && [ -n "$nomPatient" ] ; then  #Si les champs importants sont renseignés
+
+				if [ -n "$numeroDossier" ] && [ -n "$nomPatient" ]; then  #Si les champs importants sont renseignés
 
 					if [ -n "$calqueEntete" ] && [ -e $dirWork/$nameFile.pdf ];then
+						verifInsertCalque=true
 						ajoutCalque "$calqueEntete";
 					fi;
 
 					if [ -n "$calquePiedPage" ] && [ -e $dirWork/$nameFile.pdf ];then
+						verifInsertPiedPage=true
 						ajoutCalque "$calquePiedPage";					
 
 					fi;
 
 					if [ -n "$calqueSignature" ] && [ -e $dirWork/$nameFile.pdf ];then
+						verifInsertSIgnature=true
 						ajoutCalque "$calqueSignature";					
 
 					fi;
 
-					if [ -e $dirWork/$nameFile.pdf ];then
+				if [ -e $dirWork/$nameFile.pdf ];then
 
-								if [ -n "$calqueEntete" ] || [ -n "$calqueSignature" ] || [ -n "$calquePiedPage" ]; then
-									
-									mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt $dirConserves/$dateRep
-									
-									insertionData  "INSERT INTO compterendubox(path,datecreation,biologistevalidateur,nbrpage,disponible,piedpage,signature,entetepage,certificat,nompatient,numerodossier,sexe,adresse,medecin,email)VALUES
-									('$dirArchives/$dateRep/$nameFile.pdf','$dateInsrt','$bioValideur','$nbPage',true,false,false,true,false,'$nomPatient','$numeroDossier','$sexe','$adressePatient','$medecin','$emailPatient');"
-								else
-									echo "pas de calques"
-									cp $dirWork/$nameFile.pdf $dirArchives/$dateRep;	
-									mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt  $dirConserves/$dateRep;	
+						if [ -n "$calqueEntete" ] || [ -n "$calqueSignature" ] || [ -n "$calquePiedPage" ]; then
+							controlDir "$dirConserves";
+							mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt $dirConserves/$year/$month/$dateRep
+							echo "nomPatient "$nomPatient
+							insertionData  "
+							INSERT INTO compterendubox(
+							path,datecreation,biologistevalidateur,nbrpage,disponible,piedpage,signature,entetepage,certificat,patient,
+							numerodossier,sexe,adresse,medecin,nom,prenom,email,datenaissance,prenommedecin,emailmedecin,datedecreation,etat)
+							VALUES
+							('$dirArchives/$year/$month/$dateRep/$nameFile.pdf','$dateInsrt','$bioValideur','$nbPage',true,$verifInsertPiedPage,$verifInsertSIgnature,$verifInsertCalque,false,'$nomPatient',
+							'$numeroDossier','$sexe','$adressePatient','$medecin','$nom','$prenom','$emailPatient','$dateInsrt','$medecin','$medecin','$dateInsrt','traité');"
+							#INSERTION ET GENERATION DANS LE FICHIER XML
+							convertDataToXml
+							
+						else
+							controlDir "$dirArchives";
+							controlDir "$dirConserves";
+							cp $dirWork/$nameFile.pdf $dirArchives/$year/$month/$dateRep;	
+							mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt  $dirConserves/$year/$month/$dateRep;	
+							insertionData  "INSERT INTO compterendubox(
+							path,datecreation,biologistevalidateur,nbrpage,disponible,piedpage,signature,entetepage,certificat,patient,
+							numerodossier,sexe,adresse,medecin,nom,prenom,email,datenaissance,prenommedecin,emailmedecin,datedecreation,etat)
+							VALUES
+							('$dirArchives/$dateRep/$year/$month/$nameFile.pdf','$dateInsrt','$bioValideur','$nbPage',false,false,false,false,false,'$nomPatient',
+							'$numeroDossier','$sexe','$adressePatient','$medecin','$nom','$prenom','$emailPatient','$dateInsrt','$medecin','$medecin','$dateInsrt','traité');"
+								#INSERTION ET GENERATION DANS LE FICHIER XML
+						fi;				
 
-									
-									insertionData  "INSERT INTO compterendubox(path,datecreation,biologistevalidateur,nbrpage,disponible,piedpage,signature,entetepage,certificat,nompatient,numerodossier,sexe,adresse,medecin,email)VALUES
-									('$dirArchives/$dateRep/$nameFile.pdf','$dateInsrt','$bioValideur','$nbPage',false,false,false,false,false,'$nomPatient','$numeroDossier','$sexe','$adressePatient','$medecin','$emailPatient');"
-								fi;				
-									
-					fi;
+				fi;
+
 
 				else 
 					#ERREUR2
-						#Deplacement des fichiers dans le dossier Erreur2 qui n'ont pas le numero dossier et nomPatient
-						mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt $dirErreur2;
-						#ecriture dans le fichier log du jour
-						statut=$nameFile.pdf"-> Erreur les champs importants ne sont renseignés numeroDossier et nomPatient";
-						echo $dateProg": "$statut >> $dirLogs/$dateRep/$nomFileLog.txt		
+					#Deplacement des fichiers dans le dossier Erreur2 qui n'ont pas le numero dossier et nomPatient
+					controleDir $dirErreur2;
+					mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt $dirErreur2/$year/$month/$dateRep;
+					#ecriture dans le fichier log du jour
+					statut=$nameFile.pdf"-> Erreur les champs importants ne sont renseignés numeroDossier et nomPatient";
+					echo $dateProg": "$statut >> $dirLogs/$year/$month$dateRep/$nomFileLog.txt		
 
-						#Ruperation du type d'erreur et insertion erreur
-						Typerreur=$(selectData "SELECT idtypeerreur FROM typeerreur WHERE typeerreur='ERREUR2';")		
-						if [ -n "$Typerreur" ]; then
-							insertionData "INSERT INTO erreur(typeerreurid,date) VALUES($Typerreur,'$dateInsrt');"
-							echo "Erreur les champs importants ne sont renseignés numeroDossier et nomPatient"
-						fi;			
+					#Ruperation du type d'erreur et insertion erreur
+					Typerreur=$(selectData "SELECT idtypeerreur FROM typeerreur WHERE typeerreur='ERREUR2';")		
+					if [ -n "$Typerreur" ]; then
+						insertionData "INSERT INTO erreur(typeerreurid,date) VALUES($Typerreur,'$dateInsrt');"
+						echo "Erreur les champs importants ne sont renseignés numeroDossier et nomPatient"
+					fi;			
 				fi;
 			else
 				#ERREUR1
-				#Deplacement des fichiers dans le dossier Erreur1 qui ne sont pas des comptes rendus
-				mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt $dirErreur1;
+				#Deplacement des fichiers dans le dossier Erreur de Conversion pdftotext	
+				echo "Erreur fichier non compatible"
+				controlDir "$dirErreur1";
+				mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt $dirErreur1/$year/$month/$dateRep;
 
 				#ecriture dans le fichier log du jour
-				statut=$nameFile.pdf"-> Erreur fichier non compatible";
-				echo $dateProg": "$statut >> $dirLogs/$dateRep/$nomFileLog.txt
+				statut=$nameFile.pdf"-> Erreur fichier non compatible Erreur de Conversion pdftotext";
+				echo $dateProg": "$statut >> $dirLogs/$year/$month/$dateRep/$nomFileLog.txt
 
 				#Recuperation du type d'erreur et insertion erreur
 				Typerreur=$(selectData "SELECT idtypeerreur FROM typeerreur WHERE typeerreur='ERREUR1';")		
 				if [ -n "$Typerreur" ]; then
 					insertionData "INSERT INTO erreur(typeerreurid,date) VALUES($Typerreur,'$dateInsrt');"
-					echo "Erreur fichier non compatible"
+					
 				fi;	
 			fi;
 		}
 		#function des selections des données dans la base de donnée
-		selectData(){
-			arg1=$1
-			psql -t -U $USERNAME -d $DATABASE -c "$arg1"
-		}
-
+		
 		function insertionData(){
 			#rqt sql
 			arg1=$1
@@ -194,10 +228,16 @@
 			if [ "$rq_insert" = "INSERT 0 1" ]; then
 				echo "insertion avec succès"
 			else
+
 				#ERREUR5
+
+				#Deplacement des fichiers dans le dossier Erreur5	
+				controlDir "$dirErreur5";
+				mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt  $dirArchives/$year/$month/$dateRep/$nameFile.pdf $dirErreur5;
+
 				#ecriture dans le fichier log du jour
 				statut=$nameFile.pdf"-> Erreur insertion données";
-				echo $dateProg": "$statut >> $dirLogs/$dateRep/$nomFileLog.txt
+				echo $dateProg": "$statut >> $dirLogs/$year/$month/$dateRep/$nomFileLog.txt
 
 				#Recuperation du type d'erreur et insertion erreur
 				Typerreur=$(selectData "SELECT idtypeerreur FROM typeerreur WHERE typeerreur='ERREUR5';")		
@@ -205,7 +245,6 @@
 					insertionData "INSERT INTO erreur(typeerreurid,date) VALUES($Typerreur,'$dateInsrt');"
 					echo "Erreur fichier non compatible"
 				fi;	
-
 			fi;
 		}
 		#-n $chaine Vérifie si la chaîne est non vide.
@@ -213,53 +252,91 @@
 			#pdftk
 			arg1=$1 #$1 represente first argument
 			if [ -n "$arg1" ]; then #si calque bien ajouter	
-				pdftk $dirWork/$nameFile.pdf stamp  $arg1 output $dirArchives/$dateRep/$nameFile.pdf;
-				echo "calque bien ajouter"
-		    else
+			controlDir "$dirArchives";
+
+			pdftk $dirWork/$nameFile.pdf stamp  $arg1 output $dirArchives/$year/$month/$dateRep/$nameFile.pdf;
+			echo "calque bien ajouter"
+		else
 				#ERREUR3
+				controlDir "$dirErreur3";
 				statut=$nameFile.pdf"-> Erreur insertion de calques";
-				echo $dateProg": "$statut >> $dirLogs/$dateRep/$nomFileLog.txt
+				echo $dateProg": "$statut >> $dirLogs/$year/$month/$dateRep/$nomFileLog.txt
 				rm $dirWork/$nameFile.pdf $dirWork/$nameFile.txt 
-				mv $dirWork/$nameFile.pdf $dirErreur3
+				mv $dirWork/$nameFile.pdf $dirErreur3$year/$month/$dateRep
 				Typerreur=$(selectData "SELECT idtypeerreur FROM typeerreur WHERE typeerreur='ERREUR3';")		
 				if [ -n "$Typerreur" ]; then
 					insertionData "INSERT INTO erreur(typeerreurid,date) VALUES($Typerreur,'$dateInsrt');"
 				fi
-
 			fi;
 		}
 
-		#-d $nomfichier Vérifie si le fichier est un répertoire.
+
 		function creatLogFile(){
 			#Verifier/creation si fichier LOG du jour exist
+			
 			if [ ! -d $dirLogs ];then
 				mkdir $dirLogs;
-				mkdir $dirArchives;
-				mkdir $dirConserves;
+				mkdir $dirEnvoie;
 			fi;
-			if [ ! -d $dirLogs/$dateRep ];then
-				mkdir $dirLogs/$dateRep;
-				mkdir $dirConserves/$dateRep;
-				mkdir $dirArchives/$dateRep ;
-			fi;
-			if [ ! -e "$dirLogs/$dateRep/$nomFileLog.txt" ];then
-				echo "---------- Traitement CRR ----------" >> $dirLogs/$dateRep/$nomFileLog.txt;
+			#createDirectory;
+			controlDir "$dirLogs";
+
+			if [ ! -e "$dirLogs/$year/$month/$dateRep/$nomFileLog.txt" ];then
+				echo "---------- Traitement CRR ----------" >> $dirLogs/$year/$month/$dateRep/$nomFileLog.txt;
 			fi;
 			
 		}
-
-
-
-
-
+		function controlDir(){
+			if [ ! -d $1 ] ; then
+				mkdir $1;
+			fi
+			if [ ! -d "$1/$year" ]; then
+				mkdir $1/$year;
+			fi;
+			if [ ! -d "$1/$year" ]; then
+				mkdir $1/$year;
+			fi;
+			if [ ! -d "$1/$year/$month" ]; then
+				mkdir $1/$year/$month;
+			fi;
+			if [ ! -d $1/$year/$month/$dateRep ];then
+				mkdir $1/$year/$month/$dateRep;
+			fi;
+			
+		}
 		
-		
 
-		main;
+		function convertDataToXml(){
+			controlDir "$dirEnvoie/$dirFait"
+			controlDir "$dirEnvoie/$dirEnAttente"
+
+			echo "
+
+			<crr nom=""$dateRep"" numeroDossier="$numeroDossier"  numPage=""$nbPage"">
+				<patient>
+					<NomCompletPatient>$nomPatient</NomCompletPatient>
+					<Nom>$nom</Nom>
+					<Prenom>$prenom</Prenom>
+					<Sexe>$sexe</Sexe>
+					<DateNaissance>$dateDeNaissance</DateNaissance>
+					<AdressePatient>$adressePatient</AdressePatient>
+					<mailPatient>$emailPatient</mailPatient>
+				</patient>
+				<medecin>
+					<NomCompletMedecin>$medecin</NomCompletMedecin>
+					<NomMedecin></NomMedecin>
+					<PrenomMedecin></PrenomMedecin>
+					<EmailMedecin></EmailMedecin>
+				</medecin>
+				<labo>
+					<BioValidateur>$bioValideur</BioValidateur>
+					<DateEdition>$datecreation</DateEdition>		
+				</labo>
+			</crr>">>$dirEnvoie/$dirFait/$year/$month/$dateRep/$dateFIle.xml
 
 		}
-
-
-
-
 		main;
+
+	}
+
+	main;

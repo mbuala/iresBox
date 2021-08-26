@@ -1,0 +1,494 @@
+<!Start>;V1=M1;V2=2;V3=1709316031;V4=Mme
+;V5=BENOIT SYLVIE
+;V10=CENTRE DE RADIOTHERAPIE
+;V11=67 BOULEVARD LAENNEC
+;V12=60100 CREIL
+;V13=60100;V14=CREIL
+;
+;V16=EK ;V17=CR;V18=WTT ;V19=BALSA ;V20=Dr SAIDA BALLA MEKIAS
+;V21=21/09/17;V22=15H25;V23=16/09/17;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-Mme BENOIT SYLVIE
+-82 AVE DES DEPORTES
+-60600 CLERMONT
+01601
+/
+/LABO/N2C
+Patient(e) né(e) le 03/03/1965
+Sexe: F / BENOIT
+Dossier N° 1709316031
+/ 16/09/17
+
+Dr SAIDA BALLA MEKIAS
+CENTRE DE RADIOTHERAPIE
+67 BOULEVARD LAENNEC
+60100 CREIL
+
+Enregistré à 08h31 Prélevé le 16/09/17 à 08h33
+Prélevé par Melle PIRES Marie-Ca
+Edition du 21/09/17 à 15H25 Résultat Complet
+
+HEMATOLOGIE
+Valeurs de référence
+
+Antérieurs
+
+HEMOGRAMME
+XN 2000, Sysmex; analyse réalisée sur sang total (4)
+
+HEMATIES . . .
+Hémoglobine.
+Hématocrite.
+T.C.M.H. . .
+C.C.M.H. . .
+V.G.M. . . .
+
+.
+.
+.
+.
+.
+.
+
+LEUCOCYTES . . .
+Polynucléaires
+Polynucléaires
+Polynucléaires
+Lymphocytes.
+Monocytes.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+. . . . . .
+Neutrophiles.
+Eosinophiles.
+Basophiles.
+
+4.65
+12,7
+41,1
+27,3
+30,9
+88,4
+
+M/mm3
+g/100ml
+%
+picog.
+%
+u3
+
+4.00
+12,5
+37,0
+27,0
+32,0
+80,0
+
+à
+à
+à
+à
+à
+à
+
+5.20
+15,5
+47,0
+32,0
+36,0
+97,0
+
+7.020 /mm3
+57,4 %
+4030 /mm3
+2,0 %
+140 /mm3
+1,0 %
+70 /mm3
+32,8 %
+2300 /mm3
+6,8 %
+480 /mm3
+
+4.000 à 10.000
+1500 à 7000
+100 à 400
+inf. à 100
+1500 à 4000
+200 à 1000
+
+295.000 /mm3
+
+150.000 à 400.000
+
+PLAQUETTES . . . . . . . . . .
+Volume moyen plaquettaire ....
+
+9,3 fL
+
+6,0 à 12,0
+
+10/06/17
+4.56
+12,6
+40,4
+27,6
+31,2
+88,6
+6.370
+3360
+130
+60
+2310
+510
+
+294.000
+10/06/17
+9,5
+10/06/17
+
+VITESSE DE SEDIMENTATION
+Ière heure . . . . . . . . . .
+
+Page 1/4
+Attention, résultats recto-verso
+
+Dossier validé par
+
+11
+
+mm
+
+KODJO EQUAGOO
+
+inf. à 10
+
+9
+15/03/17
+
+<!Start>;V2=2;V3=1709316031;V4=Mme
+;V5=BENOIT SYLVIE
+;V15=05 ;V16=EK ;V17=CRVERSO;<Stop!>
+1709316031 Mme BENOIT SYLVIE
+Né(e) le 03/03/65 / BENOIT
+
+;
+
+Dossier du 16/09/17
+Prélevé à : 08h33
+
+______________________________________________________________________________
+
+ENZYMOLOGIE
+Technique colorimétrie enzymatique ROCHE(4); attention changement de technique le 21/04/10
+Valeurs normales a 37°C en fonction de lage et du sexe
+Valeurs de référence
+35 à 105
+Cobas C501 Roche (Technique spectrophotométrie dabsorption (4))
+
+PHOSPH.ALCALINES . . . . . . . . .
+
+50 UI/l
+
+GAMMA GT. . . . . . . . . . . . .
+
+18 UI/l
+
+L.D.H. . . . . . . . . . . . . . .
+
+161 UI/l
+
+inf. à 40
+
+Cobas C501 Roche (Technique spectrophotométrie dabsorption (4))
+
+135 à 214
+
+Antérieurs
+50
+15/03/17
+14
+15/03/17
+144
+15/03/17
+
+BIOCHIMIE (SANG)
+COBAS C501 ROCHE(4); attention changement de technique le 21/04/10
+
+UREE . . . . . . . . . . . . . . .
+(Technique enzymatique)
+
+0,29 g/l
+4,81 mmol/l
+
+Valeurs de référence
+0,10 à 0,50
+1,66 à 8,30
+
+Antérieurs
+0,26
+15/03/17
+
+DEBIT DE FILTRATION GLOMERULAIRE (formule CKD-EPI)
+En application de la nomenclature des actes de biologie médicale en date du 5 septembre 2014
+pour le diagnostic et le suivi de linsuffisance rénale chronique, lestimation du débit de filtration glomérulaire
+se fait par léquation CKD-EPI exprimée en ml/min/1.73m2 (Recommandations HAS décembre 2011)
+
+CREATININEMIE. . . . . . . . . . .
+(Technique colorimétrique)
+
+CKD-EPI en ml/min/1.73m2 :
+
+7,0 mg/l
+62,0 umol/l
+
+5,0 à 9,0
+44,3 à 79,7
+
+99.94
+
+5,0
+10/06/17
+
+111.63
+10/06/17
+
+En vue dune harmonisation avec les recommandations internationales,
+la classification rénale chronique est définie en six stades selon le DFG (ml/min/1,73 m2 de surface corporelle):
+Stade
+1
+2
+3A
+3B
+4
+5
+
+DFG
+sup ou égal à 90
+60-89
+45-59
+30-44
+15-29
+< 15
+
+Définition
+Maladie rénale chronique* avec DFG normal ou augmenté
+Maladie rénale chronique* avec DFG légèrement diminué
+Insuffisance rénale chronique modérée
+Insuffisance rénale chronique modérée
+Insuffisance rénale chronique sévère
+Insuffisance rénale chronique terminale
+
+* Avec marqueurs datteinte rénale: albuminurie, hématurie, leucocyturie, ou anomalies morphologiques ou histologiques
+ou marqueurs de dysfonction tubulaire, persistant plus de 3 mois (et à deux ou trois examens consécutifs).
+(Recommendations HAS 2012)
+
+SODIUM . . . . . . . . . . . . . .
+
+143 mEq/l
+
+136 à 145
+
+145
+15/03/17
+
+4,4 mEq/l
+
+3,4 à 4,5
+
+4,1
+15/03/17
+
+101 mEq/l
+
+98 à 107
+
+105
+15/03/17
+
+(Technique ISE indirecte)
+
+POTASSIUM. . . . . . . . . . . . .
+(Technique ISE indirecte )
+
+CHLORE . . . . . . . . . . . . . .
+(Technique ISE indirecte)
+
+Page 2/4
+Attention, résultats recto-verso
+
+Dossier validé par
+
+KODJO EQUAGOO
+
+<!Start>;V1=M1;V2=2;V3=1709316031;V4=Mme
+;V5=BENOIT SYLVIE
+;V10=CENTRE DE RADIOTHERAPIE
+;V11=67 BOULEVARD LAENNEC
+;V12=60100 CREIL
+;V13=60100;V14=CREIL
+;
+;V16=EK ;V17=CR;V18=WTT ;V19=BALSA ;V20=Dr SAIDA BALLA MEKIAS
+;V21=21/09/17;V22=15H25;V23=16/09/17;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-Mme BENOIT SYLVIE
+-82 AVE DES DEPORTES
+-60600 CLERMONT
+01601
+/
+/LABO/N2C
+Patient(e) né(e) le 03/03/1965
+Sexe: F / BENOIT
+Dossier N° 1709316031
+/ 16/09/17
+
+Dr SAIDA BALLA MEKIAS
+CENTRE DE RADIOTHERAPIE
+67 BOULEVARD LAENNEC
+60100 CREIL
+
+Enregistré à 08h31 Prélevé le 16/09/17 à 08h33
+Prélevé par Melle PIRES Marie-Ca
+Edition du 21/09/17 à 15H25 Résultat Complet
+
+PROTEINES - MARQUEURS - VITAMINES
+Valeurs de référence
+
+Antérieurs
+
+CYFRA 21-1
+(ECLIA)
+
+CYFRA 21. . . . . . . . . . . .
+
+Page 3/4
+Attention, résultats recto-verso
+
+Dossier validé par
+
+1,4 ng/ml
+
+KODJO EQUAGOO
+
+inf. à 3,3
+
+15/03/17
+1,6
+
+<!Start>;V2=2;V3=1709316031;V4=Mme
+;V5=BENOIT SYLVIE
+;V15=05 ;V16=EK ;V17=CRVERSO;<Stop!>
+1709316031 Mme BENOIT SYLVIE
+Né(e) le 03/03/65 / BENOIT
+
+;
+
+Dossier du 16/09/17
+Prélevé à : 08h33
+
+______________________________________________________________________________
+
+BILAN THYROIDIEN
+Technique ECL ROCHE (4);attention changement de technique et de valeurs de références le 21/04/10
+Valeurs de référence
+
+FT3 (Triiodothyronine libre ) . .
+
+4,30 pmol/l
+
+3,10 à 6,80
+
+13,0 pmol/l
+
+12,0 à 22,0
+
+Cobas E601 Roche (ECL (4))
+
+FT4(Thyroxine libre). . . . . . .
+Cobas E601 Roche (ECL (4))
+
+EXAMEN TRANSMIS
+Calcitonine - sérum
+voir CR laboratoire spécialisé
+Thyroglobuline - sérum
+voir CR laboratoire spécialisé
+Antigène SCC - TA4 - sérum
+voir CR laboratoire spécialisé
+
+Page 4/4
+
+Dossier validé par:
+
+KODJO EQUAGOO
+
+Antérieurs
+
+<!Start>;V1=M1;V2=2;V3=1709316031;V4=Mme
+;
+;V5=BENOIT SYLVIE
+;V17=BIOMNIS;V19=BALSA ;V20=Dr SAIDA BALLA MEKIAS
+;V21=21/09/17;V22=15H25;V23=16/09/17;<Stop!>
+
+;
+
+

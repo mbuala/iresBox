@@ -1,0 +1,161 @@
+
+
+			<crr nom=26_08_2021 numeroDossier=1804121068  numPage=5>
+				<patient>
+					<NomCompletPatient>FESSAN VINCENZA</NomCompletPatient>
+					<Nom>FESSAN</Nom>
+					<Prenom>VINCENZA</Prenom>
+					<Sexe>F</Sexe>
+					<DateNaissance>10/10/1966</DateNaissance>
+					<AdressePatient>marrakech</AdressePatient>
+					<mailPatient>test@test.com</mailPatient>
+				</patient>
+				<medecin>
+					<NomCompletMedecin>medecin</NomCompletMedecin>
+					<NomMedecin></NomMedecin>
+					<PrenomMedecin></PrenomMedecin>
+					<EmailMedecin></EmailMedecin>
+				</medecin>
+				<labo>
+					<BioValidateur>bio</BioValidateur>
+					<DateEdition></DateEdition>		
+				</labo>
+			</crr>
+
+
+			<crr nom=26_08_2021 numeroDossier=1709315062  numPage=8>
+				<patient>
+					<NomCompletPatient>BRICNET FREDERIC</NomCompletPatient>
+					<Nom>BRICNET</Nom>
+					<Prenom>FREDERIC</Prenom>
+					<Sexe>M</Sexe>
+					<DateNaissance>16/12/1951</DateNaissance>
+					<AdressePatient>marrakech</AdressePatient>
+					<mailPatient>test@test.com</mailPatient>
+				</patient>
+				<medecin>
+					<NomCompletMedecin>medecin</NomCompletMedecin>
+					<NomMedecin></NomMedecin>
+					<PrenomMedecin></PrenomMedecin>
+					<EmailMedecin></EmailMedecin>
+				</medecin>
+				<labo>
+					<BioValidateur>bio</BioValidateur>
+					<DateEdition></DateEdition>		
+				</labo>
+			</crr>
+
+
+			<crr nom=26_08_2021 numeroDossier=1709315089  numPage=4>
+				<patient>
+					<NomCompletPatient>MERCIER JOCELYNE</NomCompletPatient>
+					<Nom>MERCIER</Nom>
+					<Prenom>JOCELYNE</Prenom>
+					<Sexe>F</Sexe>
+					<DateNaissance>07/04/1958</DateNaissance>
+					<AdressePatient>marrakech</AdressePatient>
+					<mailPatient>test@test.com</mailPatient>
+				</patient>
+				<medecin>
+					<NomCompletMedecin>medecin</NomCompletMedecin>
+					<NomMedecin></NomMedecin>
+					<PrenomMedecin></PrenomMedecin>
+					<EmailMedecin></EmailMedecin>
+				</medecin>
+				<labo>
+					<BioValidateur>bio</BioValidateur>
+					<DateEdition></DateEdition>		
+				</labo>
+			</crr>
+
+
+			<crr nom=26_08_2021 numeroDossier=1709315204  numPage=7>
+				<patient>
+					<NomCompletPatient>THIVIER JONATHAN</NomCompletPatient>
+					<Nom>THIVIER</Nom>
+					<Prenom>JONATHAN</Prenom>
+					<Sexe>M</Sexe>
+					<DateNaissance>02/11/1986</DateNaissance>
+					<AdressePatient>marrakech</AdressePatient>
+					<mailPatient>test@test.com</mailPatient>
+				</patient>
+				<medecin>
+					<NomCompletMedecin>medecin</NomCompletMedecin>
+					<NomMedecin></NomMedecin>
+					<PrenomMedecin></PrenomMedecin>
+					<EmailMedecin></EmailMedecin>
+				</medecin>
+				<labo>
+					<BioValidateur>bio</BioValidateur>
+					<DateEdition></DateEdition>		
+				</labo>
+			</crr>
+
+
+			<crr nom=26_08_2021 numeroDossier=1709316007  numPage=3>
+				<patient>
+					<NomCompletPatient>BIDAULT NADINE</NomCompletPatient>
+					<Nom>BIDAULT</Nom>
+					<Prenom>NADINE</Prenom>
+					<Sexe>F</Sexe>
+					<DateNaissance>08/10/1957</DateNaissance>
+					<AdressePatient>marrakech</AdressePatient>
+					<mailPatient>test@test.com</mailPatient>
+				</patient>
+				<medecin>
+					<NomCompletMedecin>medecin</NomCompletMedecin>
+					<NomMedecin></NomMedecin>
+					<PrenomMedecin></PrenomMedecin>
+					<EmailMedecin></EmailMedecin>
+				</medecin>
+				<labo>
+					<BioValidateur>bio</BioValidateur>
+					<DateEdition></DateEdition>		
+				</labo>
+			</crr>
+
+
+			<crr nom=26_08_2021 numeroDossier=1709316031  numPage=6>
+				<patient>
+					<NomCompletPatient>BENOIT SYLVIE</NomCompletPatient>
+					<Nom>BENOIT</Nom>
+					<Prenom>SYLVIE</Prenom>
+					<Sexe>F</Sexe>
+					<DateNaissance>03/03/1965</DateNaissance>
+					<AdressePatient>marrakech</AdressePatient>
+					<mailPatient>test@test.com</mailPatient>
+				</patient>
+				<medecin>
+					<NomCompletMedecin>medecin</NomCompletMedecin>
+					<NomMedecin></NomMedecin>
+					<PrenomMedecin></PrenomMedecin>
+					<EmailMedecin></EmailMedecin>
+				</medecin>
+				<labo>
+					<BioValidateur>bio</BioValidateur>
+					<DateEdition></DateEdition>		
+				</labo>
+			</crr>
+
+
+			<crr nom=26_08_2021 numeroDossier=1709316053  numPage=4>
+				<patient>
+					<NomCompletPatient>BLAIRET PATRICK</NomCompletPatient>
+					<Nom>BLAIRET</Nom>
+					<Prenom>PATRICK</Prenom>
+					<Sexe>M</Sexe>
+					<DateNaissance>01/08/1970</DateNaissance>
+					<AdressePatient>marrakech</AdressePatient>
+					<mailPatient>test@test.com</mailPatient>
+				</patient>
+				<medecin>
+					<NomCompletMedecin>medecin</NomCompletMedecin>
+					<NomMedecin></NomMedecin>
+					<PrenomMedecin></PrenomMedecin>
+					<EmailMedecin></EmailMedecin>
+				</medecin>
+				<labo>
+					<BioValidateur>bio</BioValidateur>
+					<DateEdition></DateEdition>		
+				</labo>
+			</crr>

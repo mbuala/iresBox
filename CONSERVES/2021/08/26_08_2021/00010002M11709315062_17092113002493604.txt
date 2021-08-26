@@ -1,0 +1,713 @@
+<!Start>;V1=M1;V2=2;V3=1709315062;V4=Mr
+;V5=BRICNET FREDERIC
+;V10=2 RUE DE LA CHAUSSEE
+;V11=60510 BRESLES
+;V12=
+;V13=60510;V14=BRESLES
+;
+;V16=AL ;V17=CR;V18=PS ;V19=MANJP ;V20=DR MANDIRAC JP
+;V21=21/09/17;V22=12H46;V23=15/09/17;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-Mr BRICNET FREDERIC
+-36 GRANDE RUE
+-60510 LA RUE ST PIERRE
+01601
+/MUCS
+/LABO/9NC
+Patient(e) né(e) le 16/12/1951
+Sexe: M / BRICNET
+Dossier N° 1709315062
+/ 15/09/17
+
+DR MANDIRAC JP
+2 RUE DE LA CHAUSSEE
+60510 BRESLES
+
+Enregistré à 08h55 Prélevé le 15/09/17 à 08h56
+Prélevé par Me Lemaire Elodie
+Edition du 21/09/17 à 12H46 Résultat Complet
+
+HEMATOLOGIE
+Valeurs de référence
+
+Antérieurs
+
+HEMOGRAMME
+XN 2000, Sysmex; analyse réalisée sur sang total (4)
+
+HEMATIES . . .
+Hémoglobine.
+Hématocrite.
+T.C.M.H. . .
+C.C.M.H. . .
+V.G.M. . . .
+
+.
+.
+.
+.
+.
+.
+
+LEUCOCYTES . . .
+Polynucléaires
+Polynucléaires
+Polynucléaires
+Lymphocytes.
+Monocytes.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+. . . . . .
+Neutrophiles.
+Eosinophiles.
+Basophiles.
+
+4.99
+14,9
+45,4
+29,9
+32,8
+91,0
+
+M/mm3
+g/100ml
+%
+picog.
+%
+u3
+
+4.50
+13,0
+40,0
+27,0
+32,0
+82,0
+
+à
+à
+à
+à
+à
+à
+
+5.80
+17,0
+50,0
+32,0
+36,0
+97,0
+
+5.980 /mm3
+51,6 %
+3090 /mm3
+7,2 %
+430 /mm3
+0,3 %
+20 /mm3
+33,9 %
+2030 /mm3
+7,0 %
+420 /mm3
+
+4.000 à 10.000
+1500 à 7000
+100 à 400
+inf. à 100
+1500 à 4000
+200 à 1000
+
+223.000 /mm3
+
+150.000 à 400.000
+
+PLAQUETTES . . . . . . . . . .
+Volume moyen plaquettaire ....
+
+11,1 fL
+
+6,0 à 12,0
+
+05/02/16
+5.27
+15,6
+48,0
+29,6
+32,5
+91,1
+7.510
+3970
+450
+20
+2500
+560
+
+233.000
+05/02/16
+11,3
+05/02/16
+
+VITESSE DE SEDIMENTATION
+Ière heure . . . . . . . . . . .
+
+Page 1/6
+Attention, résultats recto-verso
+
+Dossier validé par
+
+2
+
+mm
+
+ABDUL AL KASSAR
+
+inf. à 8
+
+2
+05/02/16
+
+<!Start>;V2=2;V3=1709315062;V4=Mr
+;V5=BRICNET FREDERIC
+;V15=05 ;V16=AL ;V17=CRVERSO;<Stop!>
+1709315062 Mr BRICNET FREDERIC
+Né(e) le 16/12/51 / BRICNET
+
+;
+
+Dossier du 15/09/17
+Prélevé à : 08h56
+
+______________________________________________________________________________
+
+DIABETOLOGIE
+GLYCEMIE à JEUN. . . . . . . . . .
+Méthode enzymatique ROCHE (4)
+attention changement de technique le 21/04/10
+
+1,05 g/l
+5,83 mmol/l
+
+Valeurs de référence
+0,82 à 1,15
+4,55 à 6,38
+
+Antérieurs
+1,04
+05/02/16
+
+HEMOGLOBINE GLYQUEE
+Analyse réalisée sur sang total / D100 BIORAD (4)
+Changement de technique à compter du 18/08/15
+
+Hémoglobine HbA1c . . . . . . . .
+
+6,0 %
+
+6,1
+05/02/16
+
+Valeurs de références de lHbA1c: 4 à 6%
+
+Hémoglobine HbA1c unité IFCC
+Glycémie moyenne estimée
+
+42 mmol/mol
+1,36
+
+g/l
+
+(Estimation basée sur la formule issue de DIABETES CARE 25:275-278, 2002)
+
+Interprétation des résultats
+Sujet
+Sujet
+Sujet
+Sujet
+Sujet
+
+normal
+diabétique
+diabétique
+diabétique
+diabétique
+
+bien équilibré
+à surveiller
+mal équilibré
+non équilibré
+
+HBA1c NGSP
+4 à
+6 à
+7 à
+8 à
+sup
+
+6 %
+7 %
+8 %
+10 %
+à 10 %
+
+HBA1c IFCC
+20 à 42 mmol/mol
+42 à 53 mmol/mol
+53 à 64 mmol/mol
+64 à 86 mmol/mol
+sup à 86 mmol/mol
+
+(Référence HAS "Stratégie médicamenteuse du controle glycémique du diabète de type 2" 2013)
+
+Page 2/6
+Attention, résultats recto-verso
+
+Dossier validé par
+
+ABDUL AL KASSAR
+
+43
+05/02/16
+
+<!Start>;V1=M1;V2=2;V3=1709315062;V4=Mr
+;V5=BRICNET FREDERIC
+;V10=2 RUE DE LA CHAUSSEE
+;V11=60510 BRESLES
+;V12=
+;V13=60510;V14=BRESLES
+;
+;V16=AL ;V17=CR;V18=PS ;V19=MANJP ;V20=DR MANDIRAC JP
+;V21=21/09/17;V22=12H46;V23=15/09/17;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-Mr BRICNET FREDERIC
+-36 GRANDE RUE
+-60510 LA RUE ST PIERRE
+01601
+/MUCS
+/LABO/9NC
+Patient(e) né(e) le 16/12/1951
+Sexe: M / BRICNET
+Dossier N° 1709315062
+/ 15/09/17
+
+DR MANDIRAC JP
+2 RUE DE LA CHAUSSEE
+60510 BRESLES
+
+Enregistré à 08h55 Prélevé le 15/09/17 à 08h56
+Prélevé par Me Lemaire Elodie
+Edition du 21/09/17 à 12H46 Résultat Complet
+
+ENZYMOLOGIE
+Technique colorimétrie enzymatique ROCHE(4); attention changement de technique le 21/04/10
+Valeurs normales a 37°C en fonction de l age et du sexe
+Valeurs de référence
+inf. à 40
+Cobas C501 Roche (Technique spectrophotométrie d absorption (4))
+
+GOT (ASAT) . . . . . . . . .
+
+15 UI/l
+
+GPT (ALAT) . . . . . . . . .
+
+19 UI/l
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption (4))
+
+Page 3/6
+Attention, résultats recto-verso
+
+Dossier validé par
+
+ABDUL AL KASSAR
+
+inf. à 41
+
+Antérieurs
+17
+05/02/16
+22
+05/02/16
+
+<!Start>;V2=2;V3=1709315062;V4=Mr
+;V5=BRICNET FREDERIC
+;V15=05 ;V16=AL ;V17=CRVERSO;<Stop!>
+1709315062 Mr BRICNET FREDERIC
+Né(e) le 16/12/51 / BRICNET
+
+;
+
+Dossier du 15/09/17
+Prélevé à : 08h56
+
+______________________________________________________________________________
+
+BIOCHIMIE (SANG)
+COBAS C501 ROCHE(4); attention changement de technique le 21/04/10
+Valeurs de référence
+
+Antérieurs
+
+DEBIT DE FILTRATION GLOMERULAIRE (formule CKD-EPI)
+En application de la nomenclature des actes de biologie médicale en date du 5 septembre 2014
+pour le diagnostic et le suivi de l insuffisance rénale chronique, l estimation du débit de filtration glomérulaire
+se fait par l équation CKD-EPI exprimée en ml/min/1.73m2 (Recommandations HAS décembre 2011)
+
+CREATININEMIE. . . . . . . . . . .
+(Technique colorimétrique)
+
+CKD-EPI en ml/min/1.73m2 :
+
+10,0 mg/l
+88,5 umol/l
+
+7,0 à 12,0
+62,0 à 106,2
+
+78.63
+
+10,0
+05/02/16
+
+79.19
+05/02/16
+
+En vue d une harmonisation avec les recommandations internationales,
+la classification rénale chronique est définie en six stades selon le DFG (ml/min/1,73 m2 de surface corporelle):
+Stade
+1
+2
+3A
+3B
+4
+5
+
+DFG
+sup ou égal à 90
+60-89
+45-59
+30-44
+15-29
+< 15
+
+Définition
+Maladie rénale chronique* avec DFG normal ou augmenté
+Maladie rénale chronique* avec DFG légèrement diminué
+Insuffisance rénale chronique modérée
+Insuffisance rénale chronique modérée
+Insuffisance rénale chronique sévère
+Insuffisance rénale chronique terminale
+
+* Avec marqueurs d atteinte rénale: albuminurie, hématurie, leucocyturie, ou anomalies morphologiques ou histologiques
+ou marqueurs de dysfonction tubulaire, persistant plus de 3 mois (et à deux ou trois examens consécutifs).
+(Recommendations HAS 2012)
+
+ACIDE URIQUE . . . . . . . . . . .
+
+57 mg/l
+339 umol/l
+
+34 à 70
+202 à 417
+
+52
+05/02/16
+
+144 mEq/l
+
+136 à 145
+
+143
+05/02/16
+
+4,6 mEq/l
+
+3,4 à 4,5
+
+4,3
+05/02/16
+
+108 mEq/l
+
+98 à 107
+
+108
+05/02/16
+
+(Technique enzymatique)
+Recommandations EULAR (European League against Rhumatism - 2006)
+Patients sous traitement hypo-uricémiant: maintenir un taux inférieur à 60 mg/l
+ou
+inférieur à 50 mg/l comme seuil de sécurité contre la survenue d épisodes de goutte
+
+SODIUM . . . . . . . . . . . . . .
+(Technique ISE indirecte)
+
+POTASSIUM. . . . . . . . . . . .
+(Technique ISE indirecte )
+
+CHLORE . . . . . . . . . . . . .
+(Technique ISE indirecte)
+
+Page 4/6
+Attention, résultats recto-verso
+
+Dossier validé par
+
+ABDUL AL KASSAR
+
+<!Start>;V1=M1;V2=2;V3=1709315062;V4=Mr
+;V5=BRICNET FREDERIC
+;V10=2 RUE DE LA CHAUSSEE
+;V11=60510 BRESLES
+;V12=
+;V13=60510;V14=BRESLES
+;
+;V16=AL ;V17=CR;V18=PS ;V19=MANJP ;V20=DR MANDIRAC JP
+;V21=21/09/17;V22=12H46;V23=15/09/17;<Stop!>
+LABO TEAM CLERMONT
+31 Rue du Général de Gaulle - 60600 CLERMONT
+Tél. 03.44.50.02.33
+Fax. 03.44.50.83.19
+A. ALKASSAR
+Biologiste Responsable
+
+-Mr BRICNET FREDERIC
+-36 GRANDE RUE
+-60510 LA RUE ST PIERRE
+01601
+/MUCS
+/LABO/9NC
+Patient(e) né(e) le 16/12/1951
+Sexe: M / BRICNET
+Dossier N° 1709315062
+/ 15/09/17
+
+DR MANDIRAC JP
+2 RUE DE LA CHAUSSEE
+60510 BRESLES
+
+Enregistré à 08h55 Prélevé le 15/09/17 à 08h56
+Prélevé par Me Lemaire Elodie
+Edition du 21/09/17 à 12H46 Résultat Complet
+
+EXPLORATION DUNE ANOMALIE LIPIDIQUE
+CHOLESTEROL TOTAL. . . . . . . . .
+
+1,86 g/l
+4,80 mmol/l
+
+1,40 à 2,35
+3,61 à 6,06
+
+2,09
+05/02/16
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption (4))
+Taux à interpréter en fonction de l age et des fractions HDL et LDL et des facteurs de risques
+A titre indicatif, en l absence de risque cardio vasculaire, normale < 2g/l) -Accord Pro-
+
+HDL CHOLESTEROL. . . . . . . .. .
+
+0,45 g/l
+
+0,44
+05/02/16
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption (4))
+
+TRIGLYCERIDES. . . . . . . . . . .
+
+0,88 g/l
+1,00 mmol/l
+
+inf. à 1,50
+inf. à 1,71
+
+1,31
+05/02/16
+
+Cobas C501 Roche (Technique spectrophotométrie d absorption (4))
+
+LDL CHOLESTEROL(calculé) . . . . .
+
+1,23 g/l
+
+1,39
+05/02/16
+
+ASPECT DU SERUM. . . . . . . . . .clair
+Interprétation:
+L interprétation dépend du nombre de facteurs de risque.
+Bilan de première intention: LDL <1,60 g/l HDL >0.40g/l Triglycérides <1,50g/l
+Valeur cible de LDL-C selon le facteur de risque associé à la dyslipidémie
+Objectifs thérapeutiques (accord professionnel)
+pas de facteur de risque
+un facteur de risque
+deux facteurs de risque
+plus de deux facteurs de risque
+En présence d antécédents de maladie
+cardiovasculaire avérée ou de risques équivalents
+
+Valeurs cibles thérapeutiques du LDL
+LDL< 2,20g/l
+LDL< 1,90 g/l
+LDL < 1,60 g/l
+LDL <1.30 g/l
+
+(5,7mmol/l)
+(4.9 mmol/l)
+(4,1 mmol/l)
+(3,4 mmol/l)
+
+LDL<1g/l
+
+(2.6 mmol/l)
+
+Ces objectifs ne s appliquent pas à l hypercholestérolémie familiale, où un traitement plus précoce peut se justifier
+(Recommandations bonnes pratiques de lAfssaps - mars 2005)
+
+Page 5/6
+Attention, résultats recto-verso
+
+Dossier validé par
+
+ABDUL AL KASSAR
+
+<!Start>;V2=2;V3=1709315062;V4=Mr
+;V5=BRICNET FREDERIC
+;V15=05 ;V16=AL ;V17=CRVERSO;<Stop!>
+1709315062 Mr BRICNET FREDERIC
+Né(e) le 16/12/51 / BRICNET
+
+;
+
+Dossier du 15/09/17
+Prélevé à : 08h56
+
+______________________________________________________________________________
+
+PROTEINES - MARQUEURS - VITAMINES
+PROTEINE C REACTIVE . . . . . . . < 5 mg/l
+
+Valeurs de référence
+inf. à 5,00
+
+(Technique turbidimétrique Roche Cobas C501) (4)
+
+P.S.A . . . . . . . . . . . . . .
+
+0,710 ng/ml
+
+inf. à 4,000
+
+Antérieurs
+< 5 mg/l
+05/02/16
+
+1,050
+05/02/16
+
+(Technique ECL ROCHE ) (4)
+Seuil: 0,003 ng/ml
+Attention changement de technique au 21.04.10)
+Valeurs de références:
+<49 ans: <2 ng/ml
+49-60 ans: <3 ng/ml
+60-70 ans : <4 ng/ml
+>70 ans : <4,4 ng/ml
+Pour un PSA total supérieur aux valeurs statistiquement normales, en fonction
+des facteurs de risque et de la clinique, le dosage du PSA libre est conseillé.
+
+BILAN THYROIDIEN
+Technique ECL ROCHE (4);attention changement de technique et de valeurs de références le 21/04/10
+Valeurs de référence
+0,270 à 4,200
+Cobas E601 Roche (ECL (4))
+
+TSHus 3Géné. . . . . . . . . . . .
+
+0,960 uUI/ml
+
+EXAMEN TRANSMIS
+Borréliose de Lyme - sérologie dépistage IgG/IgM - sérum
+voir CR laboratoire spécialisé
+
+Page 6/6
+
+Dossier validé par:
+
+ABDUL AL KASSAR
+
+Antérieurs
+1,540
+05/02/16
+
+<!Start>;V1=M1;V2=2;V3=1709315062;V4=Mr
+;V5=BRICNET FREDERIC
+;V17=BIOMNIS;V19=MANJP ;V20=DR MANDIRAC JP
+;V21=21/09/17;V22=12H46;V23=15/09/17;<Stop!>
+
+;
+;
+
+

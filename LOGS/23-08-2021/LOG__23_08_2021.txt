@@ -1,2 +1,0 @@
----------- Traitement CRR ----------
-23-08-2021 13:05:18: entete1.pdf-> Erreur les champs importants ne sont renseignés numeroDossier et nomPatient
