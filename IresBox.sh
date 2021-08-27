@@ -40,7 +40,7 @@
 		dateRep="$(date +%d_%m_%Y)";
 		nomFileLog="LOG_"$nomSource"_"$(date +%d_%m_%Y);
 		pile=10; #Nombre de fichiers a traiter par passage
-		dateInsrt="$(date +%Y-%m-%d' '%H:%M:%S)";	
+		dateInsrt="$(date +%Y-%m-%d)";	
 
 		#Fichiers PDF
 		nbFileIn=`find $dirIn -type f -iname "*.pdf" | wc -l`;
@@ -56,7 +56,7 @@
 		creatLogFile;
 		generateentetexml;
 		generateFolderForFtpFile;
-		runningZip
+		#runningZip
 		nbPage=""
 		nomPatient="";
 		adressePatient="":
@@ -67,18 +67,15 @@
 		medecin="";
 		bioValideur="";
 
-		declare -a montableau;
-
 		if 	[ $nbFileWork != 0 ]; then 
 			#TO DO
 			echo "work"
 		elif [ $nbFileIn != 0 ]; then
 			traitementPdf;
+			
+		
 		else
-			#zip $dirEnvoie/$dirFait/$year/$month/$dateRep/dateRep.zip $dirEnvoie/$dirFait/$year/$month/$dateRep/$dateFIle.xml 
-			echo "zip"
-			montableau=$(selectData "SELECT * FROM compterendubox WHERE datecreation='2021-08-26';");
-			echo ${montableau[0]}
+			runningZip;
 		fi;
 
 
@@ -105,7 +102,8 @@
 		    else
 		    	statutApp="Répertoire IN vide";
 		    	echo $statutApp 
-		    	echo $dateProg": "$statutApp >> $dirLogs/$dateRep/$nomFileLog.txt;
+		    	echo $dateProg": "$statutApp >> $dirLogs/$year/$month/$dateRep/$nomFileLog.txt;
+
 		    fi;
 
 		}
@@ -136,8 +134,11 @@
 				#MEDECIN
 				emailMedecin="medecin@test.com"
 				medecin="medecin" 
-				bioValideur="bio"
-				datecreation=""			
+				nommedecin="ahmed";
+				prenommedecin="boutouli"
+				bioValideur="alfonso "
+				datecreation="$dateFIle";		
+				dateedition="$dateFIle"	
 				
 
 				if [ -n "$numeroDossier" ] && [ -n "$nomPatient" ]; then  #Si les champs importants sont renseignés
@@ -167,12 +168,11 @@
 							echo "nomPatient "$nomPatient
 							insertionData  "
 							INSERT INTO compterendubox(
-							path,datecreation,biologistevalidateur,nbrpage,disponible,piedpage,signature,entetepage,certificat,patient,
-							numerodossier,sexe,adresse,medecin,nom,prenom,email,datenaissance,prenommedecin,emailmedecin,datedecreation,etat)
+							path,dateedition,biologistevalidateur,nbrpage,disponible,piedpage,signature,entetepage,certificat,patient,
+							numerodossier,sexe,adresse,medecin,nom,prenom,email,datenaissance,prenommedecin,emailmedecin,datecreation,etat)
 							VALUES
 							('$dirArchives/$year/$month/$dateRep/$nameFile.pdf','$dateInsrt','$bioValideur','$nbPage',true,$verifInsertPiedPage,$verifInsertSIgnature,$verifInsertCalque,false,'$nomPatient',
 							'$numeroDossier','$sexe','$adressePatient','$medecin','$nom','$prenom','$emailPatient','$dateInsrt','$medecin','$medecin','$dateInsrt','traité');"
-							#INSERTION ET GENERATION DANS LE FICHIER XML
 							convertDataToXml
 							
 						else
@@ -181,12 +181,12 @@
 							cp $dirWork/$nameFile.pdf $dirArchives/$year/$month/$dateRep;	
 							mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt  $dirConserves/$year/$month/$dateRep;	
 							insertionData  "INSERT INTO compterendubox(
-							path,datecreation,biologistevalidateur,nbrpage,disponible,piedpage,signature,entetepage,certificat,patient,
-							numerodossier,sexe,adresse,medecin,nom,prenom,email,datenaissance,prenommedecin,emailmedecin,datedecreation,etat)
+							path,dateedition,biologistevalidateur,nbrpage,disponible,piedpage,signature,entetepage,certificat,patient,
+							numerodossier,sexe,adresse,medecin,nom,prenom,email,datenaissance,prenommedecin,emailmedecin,datecreation,etat)
 							VALUES
 							('$dirArchives/$dateRep/$year/$month/$nameFile.pdf','$dateInsrt','$bioValideur','$nbPage',false,false,false,false,false,'$nomPatient',
 							'$numeroDossier','$sexe','$adressePatient','$medecin','$nom','$prenom','$emailPatient','$dateInsrt','$medecin','$medecin','$dateInsrt','traité');"
-								#INSERTION ET GENERATION DANS LE FICHIER XML
+							convertDataToXml	
 						fi;				
 
 					fi;
@@ -233,6 +233,7 @@
 			rq_insert=$(psql -t -U $USERNAME -d $DATABASE -c "$arg1")
 			if [ "$rq_insert" = "INSERT 0 1" ]; then
 				echo "insertion avec succès"
+				
 			else
 
 				#ERREUR5
@@ -329,6 +330,23 @@
 			if [ ! -e "$dirRunning/$dateFIle" ]; then
 				echo "run script">>$dirRunning/$dateFIle.xml
 			fi
+			fileRunningScript="RUNNING/dateFIle.txt";
+			 if [ -e "$fileRunningScript" ];then
+			echo "en entente de 60 sec"
+			    sleep 60s; 
+			    main;
+			else 
+			   echo "script fini"
+			   #INSERTION ET GENERATION DANS LE FICHIER XML
+				document=$(selectData "SELECT dateedition,biologistevalidateur,nbrpage,numerodossier,patient,sexe,adresse,nom,prenom,email,datenaissance,medecin,prenommedecin,emailmedecin FROM compterendubox WHERE datecreation='$dateInsrt'");
+				
+			   	# zip -r myfiles.zip mydir
+			  	fileIn=`ls $dirXml/*.xml`;
+			  	echo $fileIn
+			  	folderOut=$dirEnvoie/$dirFait/$year/$month/$dateRep/$dateRep.zip
+			  # zip -r -D  $dataxml
+
+			fi;
 		}
 
 		generateentetexml(){
@@ -338,6 +356,7 @@
 		fi
 
 		if [ ! -e $dirXml/$dateFIle.xml ];then
+			echo "data ajouté dans le fichier xml"
 				echo "<?xml version="1.0" encoding="utf-8"?>">>$dirXml/$dateFIle.xml
 
 		fi;
@@ -346,7 +365,7 @@
 		function convertDataToXml(){
 			
 			echo "			
-			<crr nom=""$dateRep"" numeroDossier="$numeroDossier"  numPage=""$nbPage"">
+			<crr nom="$dateRep" numeroDossier="$numeroDossier_"  numPage="$nbPage">
 				<patient>
 					<NomCompletPatient>$nomPatient</NomCompletPatient>
 					<Nom>$nom</Nom>
@@ -358,9 +377,9 @@
 				</patient>
 				<medecin>
 					<NomCompletMedecin>$medecin</NomCompletMedecin>
-					<NomMedecin></NomMedecin>
-					<PrenomMedecin></PrenomMedecin>
-					<EmailMedecin></EmailMedecin>
+					<NomMedecin>$nommedecin</NomMedecin>
+					<PrenomMedecin>$prenommedecin</PrenomMedecin>
+					<EmailMedecin>$emailMedecin</EmailMedecin>
 				</medecin>
 				<labo>
 					<BioValidateur>$bioValideur</BioValidateur>

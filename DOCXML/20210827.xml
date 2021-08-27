@@ -1,6 +1,6 @@
 <?xml version=1.0 encoding=utf-8?>
 			
-			<crr nom=27_08_2021 numeroDossier=1804121068  numPage=5>
+			<crr nom=27_08_2021 numeroDossier=  numPage=5>
 				<patient>
 					<NomCompletPatient>FESSAN VINCENZA</NomCompletPatient>
 					<Nom>FESSAN</Nom>
@@ -12,17 +12,17 @@
 				</patient>
 				<medecin>
 					<NomCompletMedecin>medecin</NomCompletMedecin>
-					<NomMedecin></NomMedecin>
-					<PrenomMedecin></PrenomMedecin>
-					<EmailMedecin></EmailMedecin>
+					<NomMedecin>ahmed</NomMedecin>
+					<PrenomMedecin>boutouli</PrenomMedecin>
+					<EmailMedecin>medecin@test.com</EmailMedecin>
 				</medecin>
 				<labo>
-					<BioValidateur>bio</BioValidateur>
-					<DateEdition></DateEdition>		
+					<BioValidateur>alfonso </BioValidateur>
+					<DateEdition>20210827</DateEdition>		
 				</labo>
 			</crr>
 			
-			<crr nom=27_08_2021 numeroDossier=1709315062  numPage=8>
+			<crr nom=27_08_2021 numeroDossier=  numPage=8>
 				<patient>
 					<NomCompletPatient>BRICNET FREDERIC</NomCompletPatient>
 					<Nom>BRICNET</Nom>
@@ -34,17 +34,17 @@
 				</patient>
 				<medecin>
 					<NomCompletMedecin>medecin</NomCompletMedecin>
-					<NomMedecin></NomMedecin>
-					<PrenomMedecin></PrenomMedecin>
-					<EmailMedecin></EmailMedecin>
+					<NomMedecin>ahmed</NomMedecin>
+					<PrenomMedecin>boutouli</PrenomMedecin>
+					<EmailMedecin>medecin@test.com</EmailMedecin>
 				</medecin>
 				<labo>
-					<BioValidateur>bio</BioValidateur>
-					<DateEdition></DateEdition>		
+					<BioValidateur>alfonso </BioValidateur>
+					<DateEdition>20210827</DateEdition>		
 				</labo>
 			</crr>
 			
-			<crr nom=27_08_2021 numeroDossier=1709315089  numPage=4>
+			<crr nom=27_08_2021 numeroDossier=  numPage=4>
 				<patient>
 					<NomCompletPatient>MERCIER JOCELYNE</NomCompletPatient>
 					<Nom>MERCIER</Nom>
@@ -56,17 +56,17 @@
 				</patient>
 				<medecin>
 					<NomCompletMedecin>medecin</NomCompletMedecin>
-					<NomMedecin></NomMedecin>
-					<PrenomMedecin></PrenomMedecin>
-					<EmailMedecin></EmailMedecin>
+					<NomMedecin>ahmed</NomMedecin>
+					<PrenomMedecin>boutouli</PrenomMedecin>
+					<EmailMedecin>medecin@test.com</EmailMedecin>
 				</medecin>
 				<labo>
-					<BioValidateur>bio</BioValidateur>
-					<DateEdition></DateEdition>		
+					<BioValidateur>alfonso </BioValidateur>
+					<DateEdition>20210827</DateEdition>		
 				</labo>
 			</crr>
 			
-			<crr nom=27_08_2021 numeroDossier=1709315204  numPage=7>
+			<crr nom=27_08_2021 numeroDossier=  numPage=7>
 				<patient>
 					<NomCompletPatient>THIVIER JONATHAN</NomCompletPatient>
 					<Nom>THIVIER</Nom>
@@ -78,17 +78,17 @@
 				</patient>
 				<medecin>
 					<NomCompletMedecin>medecin</NomCompletMedecin>
-					<NomMedecin></NomMedecin>
-					<PrenomMedecin></PrenomMedecin>
-					<EmailMedecin></EmailMedecin>
+					<NomMedecin>ahmed</NomMedecin>
+					<PrenomMedecin>boutouli</PrenomMedecin>
+					<EmailMedecin>medecin@test.com</EmailMedecin>
 				</medecin>
 				<labo>
-					<BioValidateur>bio</BioValidateur>
-					<DateEdition></DateEdition>		
+					<BioValidateur>alfonso </BioValidateur>
+					<DateEdition>20210827</DateEdition>		
 				</labo>
 			</crr>
 			
-			<crr nom=27_08_2021 numeroDossier=1709316007  numPage=3>
+			<crr nom=27_08_2021 numeroDossier=  numPage=3>
 				<patient>
 					<NomCompletPatient>BIDAULT NADINE</NomCompletPatient>
 					<Nom>BIDAULT</Nom>
@@ -100,17 +100,17 @@
 				</patient>
 				<medecin>
 					<NomCompletMedecin>medecin</NomCompletMedecin>
-					<NomMedecin></NomMedecin>
-					<PrenomMedecin></PrenomMedecin>
-					<EmailMedecin></EmailMedecin>
+					<NomMedecin>ahmed</NomMedecin>
+					<PrenomMedecin>boutouli</PrenomMedecin>
+					<EmailMedecin>medecin@test.com</EmailMedecin>
 				</medecin>
 				<labo>
-					<BioValidateur>bio</BioValidateur>
-					<DateEdition></DateEdition>		
+					<BioValidateur>alfonso </BioValidateur>
+					<DateEdition>20210827</DateEdition>		
 				</labo>
 			</crr>
 			
-			<crr nom=27_08_2021 numeroDossier=1709316031  numPage=6>
+			<crr nom=27_08_2021 numeroDossier=  numPage=6>
 				<patient>
 					<NomCompletPatient>BENOIT SYLVIE</NomCompletPatient>
 					<Nom>BENOIT</Nom>
@@ -122,17 +122,17 @@
 				</patient>
 				<medecin>
 					<NomCompletMedecin>medecin</NomCompletMedecin>
-					<NomMedecin></NomMedecin>
-					<PrenomMedecin></PrenomMedecin>
-					<EmailMedecin></EmailMedecin>
+					<NomMedecin>ahmed</NomMedecin>
+					<PrenomMedecin>boutouli</PrenomMedecin>
+					<EmailMedecin>medecin@test.com</EmailMedecin>
 				</medecin>
 				<labo>
-					<BioValidateur>bio</BioValidateur>
-					<DateEdition></DateEdition>		
+					<BioValidateur>alfonso </BioValidateur>
+					<DateEdition>20210827</DateEdition>		
 				</labo>
 			</crr>
 			
-			<crr nom=27_08_2021 numeroDossier=1709316053  numPage=4>
+			<crr nom=27_08_2021 numeroDossier=  numPage=4>
 				<patient>
 					<NomCompletPatient>BLAIRET PATRICK</NomCompletPatient>
 					<Nom>BLAIRET</Nom>
@@ -144,12 +144,12 @@
 				</patient>
 				<medecin>
 					<NomCompletMedecin>medecin</NomCompletMedecin>
-					<NomMedecin></NomMedecin>
-					<PrenomMedecin></PrenomMedecin>
-					<EmailMedecin></EmailMedecin>
+					<NomMedecin>ahmed</NomMedecin>
+					<PrenomMedecin>boutouli</PrenomMedecin>
+					<EmailMedecin>medecin@test.com</EmailMedecin>
 				</medecin>
 				<labo>
-					<BioValidateur>bio</BioValidateur>
-					<DateEdition></DateEdition>		
+					<BioValidateur>alfonso </BioValidateur>
+					<DateEdition>20210827</DateEdition>		
 				</labo>
 			</crr>
