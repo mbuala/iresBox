@@ -19,6 +19,8 @@
 		dirErreur5="ERREURS/ERREUR5";
 		dirArchives="ARCHIVES";
 		dirConserves="CONSERVES";
+		dirRunning="RUNNING"
+		dirXml="DOCXML";
 		dirLogs="LOGS";
 		dirCalques="CALQUES";###########
 		dirEnvoie="ENVOIS";	
@@ -52,7 +54,9 @@
 
 		#Generation fichier log
 		creatLogFile;
-
+		generateentetexml;
+		generateFolderForFtpFile;
+		runningZip
 		nbPage=""
 		nomPatient="";
 		adressePatient="":
@@ -62,15 +66,19 @@
 		emailMedecin="";
 		medecin="";
 		bioValideur="";
-		
-		if [ $nbFileIn != 0 ]; then
-			echo "";
-			traitementPdf;
-		elif [ $nbFileWork == 0 ]; then
+
+		declare -a montableau;
+
+		if 	[ $nbFileWork != 0 ]; then 
 			#TO DO
-			zip $dirEnvoie/$dirFait/$year/$month/$dateRep/dateRep.zip $dirEnvoie/$dirFait/$year/$month/$dateRep/$dateFIle.xml 
-			OUTPUT=$(selectData "SELECT * FROM compterendubox WHERE datecreation='$dateInsrt';")	
-			
+			echo "work"
+		elif [ $nbFileIn != 0 ]; then
+			traitementPdf;
+		else
+			#zip $dirEnvoie/$dirFait/$year/$month/$dateRep/dateRep.zip $dirEnvoie/$dirFait/$year/$month/$dateRep/$dateFIle.xml 
+			echo "zip"
+			montableau=$(selectData "SELECT * FROM compterendubox WHERE datecreation='2021-08-26';");
+			echo ${montableau[0]}
 		fi;
 
 
@@ -96,7 +104,7 @@
 		    	fi;	
 		    else
 		    	statutApp="Répertoire IN vide";
-		    	echo $statutApp
+		    	echo $statutApp 
 		    	echo $dateProg": "$statutApp >> $dirLogs/$dateRep/$nomFileLog.txt;
 		    fi;
 
@@ -151,7 +159,7 @@
 
 					fi;
 
-				if [ -e $dirWork/$nameFile.pdf ];then
+					if [ -e $dirWork/$nameFile.pdf ];then
 
 						if [ -n "$calqueEntete" ] || [ -n "$calqueSignature" ] || [ -n "$calquePiedPage" ]; then
 							controlDir "$dirConserves";
@@ -181,9 +189,7 @@
 								#INSERTION ET GENERATION DANS LE FICHIER XML
 						fi;				
 
-				fi;
-
-
+					fi;
 				else 
 					#ERREUR2
 					#Deplacement des fichiers dans le dossier Erreur2 qui n'ont pas le numero dossier et nomPatient
@@ -276,7 +282,7 @@
 			
 			if [ ! -d $dirLogs ];then
 				mkdir $dirLogs;
-				mkdir $dirEnvoie;
+								
 			fi;
 			#createDirectory;
 			controlDir "$dirLogs";
@@ -304,14 +310,42 @@
 			fi;
 			
 		}
-		
+		function generateFolderForFtpFile(){
+			if [ ! -d $dirEnvoie ];then
+				mkdir $dirEnvoie;	
 
-		function convertDataToXml(){
+			fi;
 			controlDir "$dirEnvoie/$dirFait"
 			controlDir "$dirEnvoie/$dirEnAttente"
+		}
+		
+		function runningZip(){
 
-			echo "
+			
+			if [ ! -d "$dirRunning" ]; then
+				mkdir $dirRunning;
 
+			fi
+			if [ ! -e "$dirRunning/$dateFIle" ]; then
+				echo "run script">>$dirRunning/$dateFIle.xml
+			fi
+		}
+
+		generateentetexml(){
+		if [ ! -d "$dirXml" ]; then
+				mkdir $dirXml;
+
+		fi
+
+		if [ ! -e $dirXml/$dateFIle.xml ];then
+				echo "<?xml version="1.0" encoding="utf-8"?>">>$dirXml/$dateFIle.xml
+
+		fi;
+
+		}
+		function convertDataToXml(){
+			
+			echo "			
 			<crr nom=""$dateRep"" numeroDossier="$numeroDossier"  numPage=""$nbPage"">
 				<patient>
 					<NomCompletPatient>$nomPatient</NomCompletPatient>
@@ -332,7 +366,7 @@
 					<BioValidateur>$bioValideur</BioValidateur>
 					<DateEdition>$datecreation</DateEdition>		
 				</labo>
-			</crr>">>$dirEnvoie/$dirFait/$year/$month/$dateRep/$dateFIle.xml
+			</crr>">>$dirXml/$dateFIle.xml
 
 		}
 		main;
