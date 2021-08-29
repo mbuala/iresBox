@@ -1,6 +1,7 @@
 		#!/usr/bin/env 
 		. ./DataBaseParameters.sh --source-only
 		function main(){
+			echo "debut"
 		#DATABASE PARAMETRES
 		DATABASE="iresbox"
 		USERNAME="mbuala"
@@ -66,13 +67,11 @@
 		emailMedecin="";
 		medecin="";
 		bioValideur="";
-
 		if 	[ $nbFileWork != 0 ]; then 
 			#TO DO
 			echo "work"
 		elif [ $nbFileIn != 0 ]; then
-			traitementPdf;
-			
+			traitementPdf;	
 		
 		else
 			runningZip;
@@ -90,20 +89,16 @@
 		    	done;
 		    	filesWork=`ls $dirWork/*.pdf`;
 		    	nbFileIn=`find $dirIn -type f -iname "*.pdf" | wc -l`;
-		    	for file in $filesWork; do	
-
+		    	for file in $filesWork; do
 		    		extractionData ;  
 		    	done;
-
 		    	if [ $nbFileIn != 0 ]; then
 		    		traitementPdf;
-
 		    	fi;	
 		    else
 		    	statutApp="Répertoire IN vide";
 		    	echo $statutApp 
 		    	echo $dateProg": "$statutApp >> $dirLogs/$year/$month/$dateRep/$nomFileLog.txt;
-
 		    fi;
 
 		}
@@ -187,7 +182,7 @@
 							('$dirArchives/$dateRep/$year/$month/$nameFile.pdf','$dateInsrt','$bioValideur','$nbPage',false,false,false,false,false,'$nomPatient',
 							'$numeroDossier','$sexe','$adressePatient','$medecin','$nom','$prenom','$emailPatient','$dateInsrt','$medecin','$medecin','$dateInsrt','traité');"
 							convertDataToXml	
-						fi;				
+						fi;				 
 
 					fi;
 				else 
@@ -259,17 +254,17 @@
 			#pdftk
 			arg1=$1 #$1 represente first argument
 			if [ -n "$arg1" ]; then #si calque bien ajouter	
-			controlDir "$dirArchives";
+				controlDir "$dirArchives";
 
-			pdftk $dirWork/$nameFile.pdf stamp  $arg1 output $dirArchives/$year/$month/$dateRep/$nameFile.pdf;
-			echo "calque bien ajouter"
-		else
+				pdftk $dirWork/$nameFile.pdf stamp  $arg1 output $dirArchives/$year/$month/$dateRep/$nameFile.pdf;
+				echo "calque bien ajouter"
+			else
 				#ERREUR3
 				controlDir "$dirErreur3";
 				statut=$nameFile.pdf"-> Erreur insertion de calques";
 				echo $dateProg": "$statut >> $dirLogs/$year/$month/$dateRep/$nomFileLog.txt
 				rm $dirWork/$nameFile.pdf $dirWork/$nameFile.txt 
-				mv $dirWork/$nameFile.pdf $dirErreur3$year/$month/$dateRep
+				mv $dirWork/$nameFile.pdf $dirErreur3/$year/$month/$dateRep
 				Typerreur=$(selectData "SELECT idtypeerreur FROM typeerreur WHERE typeerreur='ERREUR3';")		
 				if [ -n "$Typerreur" ]; then
 					insertionData "INSERT INTO erreur(typeerreurid,date) VALUES($Typerreur,'$dateInsrt');"
@@ -322,43 +317,50 @@
 		
 		function runningZip(){
 
-			
+			if [ ! -d "$dateFIle" ]; then
+				mkdir $dateFIle;
+				
+			fi			
 			if [ ! -d "$dirRunning" ]; then
 				mkdir $dirRunning;
+				
+			fi
 
-			fi
 			if [ ! -e "$dirRunning/$dateFIle" ]; then
-				echo "run script">>$dirRunning/$dateFIle.xml
+				echo "run script">>$dirRunning/$dateFIle.txt
 			fi
+
 			fileRunningScript="RUNNING/dateFIle.txt";
-			 if [ -e "$fileRunningScript" ];then
-			echo "en entente de 60 sec"
+			if [ -e "$fileRunningScript" ];then
+				echo "en entente de 60 sec"
 			    sleep 60s; 
 			    main;
 			else 
-			   echo "script fini"
-			   #INSERTION ET GENERATION DANS LE FICHIER XML
-				document=$(selectData "SELECT dateedition,biologistevalidateur,nbrpage,numerodossier,patient,sexe,adresse,nom,prenom,email,datenaissance,medecin,prenommedecin,emailmedecin FROM compterendubox WHERE datecreation='$dateInsrt'");
+			   	echo "script fini"
+			   	#INSERTION ET GENERATION DANS LE FICHIER XML
+				document=$(selectData "SELECT dateedition,biologistevalidateur,nbrpage,numerodossier,patient,sexe,adresse,nom,prenom,email,datenaissance,medecin,prenommedecin,emailmedecin FROM compterendubox WHERE datecreation='2021-08-27' LIMIT 1");
+				if [ ! -e "$dateFIle.zip" ]; then
+					controlDir "$dirArchives";
+					cp $dirXml/$dateFIle.xml $dateFIle
+					cp $dirArchives/$year/$month/$dateRep/*.pdf $dateFIle;
+					
+					sleep 3s; 
+					zip -r -D $dateFIle.zip $dateFIle/*
+					mv $dateFIle.zip $dirEnvoie/$dirFait/$year/$month/$dateRep
+				fi
 				
-			   	# zip -r myfiles.zip mydir
-			  	fileIn=`ls $dirXml/*.xml`;
-			  	echo $fileIn
-			  	folderOut=$dirEnvoie/$dirFait/$year/$month/$dateRep/$dateRep.zip
-			  # zip -r -D  $dataxml
 
 			fi;
 		}
 
 		generateentetexml(){
 		if [ ! -d "$dirXml" ]; then
-				mkdir $dirXml;
-
+			mkdir $dirXml;
 		fi
 
 		if [ ! -e $dirXml/$dateFIle.xml ];then
 			echo "data ajouté dans le fichier xml"
 				echo "<?xml version="1.0" encoding="utf-8"?>">>$dirXml/$dateFIle.xml
-
 		fi;
 
 		}
