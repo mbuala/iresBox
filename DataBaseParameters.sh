@@ -15,8 +15,21 @@
 	}
 	updateData(){
 		arg1=$1
+			if [ -n "$arg1" ]; then
+				
+				rq_insert=$(psql -t -U $USERNAME -d $DATABASE -c "UPDATE compterendubox SET etat='envoie' WHERE idcoompterendu=$arg1")
+				if [ "$rq_insert" = "UPDATE 1" ]; then
+					echo "update  avec succès"
+				else
+					exit 
+				fi
+			else
+				exit
+
+			fi			
 	}
 	deletedata(){
 		arg1=$1
-
+		echo "arg1 "$arg1
 	}
+

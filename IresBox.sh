@@ -1,7 +1,6 @@
 		#!/usr/bin/env 
 		. ./DataBaseParameters.sh --source-only
 		function main(){
-			echo "debut"
 		#DATABASE PARAMETRES
 		DATABASE="iresbox"
 		USERNAME="mbuala"
@@ -29,7 +28,7 @@
 		dirEnAttente="ENATTENTE"
 		dateFIle="$(date +%Y%m%d)";
 		day=$(date +%d);
-	    month=$(date +%m);
+		month=$(date +%m);
 		year=$(date +%Y);
 
 		#récupération des parametres dans la base de donnée
@@ -52,7 +51,7 @@
 		verifInsertCalque=false;
 		verifInsertSIgnature=false
 		verifInsertPiedPage=false
-
+		verifRepertoire=false
 		#Generation fichier log
 		creatLogFile;
 		generateentetexml;
@@ -69,10 +68,10 @@
 		bioValideur="";
 		if 	[ $nbFileWork != 0 ]; then 
 			#TO DO
-			echo "work"
+			echo ""
 		elif [ $nbFileIn != 0 ]; then
 			traitementPdf;	
-		
+			
 		else
 			runningZip;
 		fi;
@@ -97,8 +96,11 @@
 		    	fi;	
 		    else
 		    	statutApp="Répertoire IN vide";
-		    	echo $statutApp 
+		    	verifRepertoire=true;
+		    	echo $statutApp;
 		    	echo $dateProg": "$statutApp >> $dirLogs/$year/$month/$dateRep/$nomFileLog.txt;
+		    	
+		    	#sleep 10s exit;
 		    fi;
 
 		}
@@ -138,54 +140,53 @@
 
 				if [ -n "$numeroDossier" ] && [ -n "$nomPatient" ]; then  #Si les champs importants sont renseignés
 
-					if [ -n "$calqueEntete" ] && [ -e $dirWork/$nameFile.pdf ];then
-						verifInsertCalque=true
-						ajoutCalque "$calqueEntete";
-					fi;
+				if [ -n "$calqueEntete" ] && [ -e $dirWork/$nameFile.pdf ];then
+					verifInsertCalque=true
+					ajoutCalque "$calqueEntete";
+				fi;
 
-					if [ -n "$calquePiedPage" ] && [ -e $dirWork/$nameFile.pdf ];then
-						verifInsertPiedPage=true
-						ajoutCalque "$calquePiedPage";					
+				if [ -n "$calquePiedPage" ] && [ -e $dirWork/$nameFile.pdf ];then
+					verifInsertPiedPage=true
+					ajoutCalque "$calquePiedPage";					
 
-					fi;
+				fi;
 
-					if [ -n "$calqueSignature" ] && [ -e $dirWork/$nameFile.pdf ];then
-						verifInsertSIgnature=true
-						ajoutCalque "$calqueSignature";					
+				if [ -n "$calqueSignature" ] && [ -e $dirWork/$nameFile.pdf ];then
+					verifInsertSIgnature=true
+					ajoutCalque "$calqueSignature";					
 
-					fi;
+				fi;
 
-					if [ -e $dirWork/$nameFile.pdf ];then
+				if [ -e $dirWork/$nameFile.pdf ];then
 
-						if [ -n "$calqueEntete" ] || [ -n "$calqueSignature" ] || [ -n "$calquePiedPage" ]; then
-							controlDir "$dirConserves";
-							mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt $dirConserves/$year/$month/$dateRep
-							echo "nomPatient "$nomPatient
-							insertionData  "
-							INSERT INTO compterendubox(
-							path,dateedition,biologistevalidateur,nbrpage,disponible,piedpage,signature,entetepage,certificat,patient,
-							numerodossier,sexe,adresse,medecin,nom,prenom,email,datenaissance,prenommedecin,emailmedecin,datecreation,etat)
-							VALUES
-							('$dirArchives/$year/$month/$dateRep/$nameFile.pdf','$dateInsrt','$bioValideur','$nbPage',true,$verifInsertPiedPage,$verifInsertSIgnature,$verifInsertCalque,false,'$nomPatient',
-							'$numeroDossier','$sexe','$adressePatient','$medecin','$nom','$prenom','$emailPatient','$dateInsrt','$medecin','$medecin','$dateInsrt','traité');"
-							convertDataToXml
-							
-						else
-							controlDir "$dirArchives";
-							controlDir "$dirConserves";
-							cp $dirWork/$nameFile.pdf $dirArchives/$year/$month/$dateRep;	
-							mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt  $dirConserves/$year/$month/$dateRep;	
-							insertionData  "INSERT INTO compterendubox(
-							path,dateedition,biologistevalidateur,nbrpage,disponible,piedpage,signature,entetepage,certificat,patient,
-							numerodossier,sexe,adresse,medecin,nom,prenom,email,datenaissance,prenommedecin,emailmedecin,datecreation,etat)
-							VALUES
-							('$dirArchives/$dateRep/$year/$month/$nameFile.pdf','$dateInsrt','$bioValideur','$nbPage',false,false,false,false,false,'$nomPatient',
-							'$numeroDossier','$sexe','$adressePatient','$medecin','$nom','$prenom','$emailPatient','$dateInsrt','$medecin','$medecin','$dateInsrt','traité');"
-							convertDataToXml	
-						fi;				 
+					if [ -n "$calqueEntete" ] || [ -n "$calqueSignature" ] || [ -n "$calquePiedPage" ]; then
+						controlDir "$dirConserves";
+						mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt $dirConserves/$year/$month/$dateRep
+						insertionData  "
+						INSERT INTO compterendubox(
+						path,dateedition,biologistevalidateur,nbrpage,disponible,piedpage,signature,entetepage,certificat,patient,
+						numerodossier,sexe,adresse,medecin,nom,prenom,email,datenaissance,prenommedecin,emailmedecin,datecreation,etat)
+						VALUES
+						('$dirArchives/$year/$month/$dateRep/$nameFile.pdf','$dateInsrt','$bioValideur','$nbPage',true,$verifInsertPiedPage,$verifInsertSIgnature,$verifInsertCalque,false,'$nomPatient',
+						'$numeroDossier','$sexe','$adressePatient','$medecin','$nom','$prenom','$emailPatient','$dateInsrt','$medecin','$medecin','$dateInsrt','traité');"
+						convertDataToXml
+						
+					else
+						controlDir "$dirArchives";
+						controlDir "$dirConserves";
+						cp $dirWork/$nameFile.pdf $dirArchives/$year/$month/$dateRep;	
+						mv $dirWork/$nameFile.pdf $dirWork/$nameFile.txt  $dirConserves/$year/$month/$dateRep;	
+						insertionData  "INSERT INTO compterendubox(
+						path,dateedition,biologistevalidateur,nbrpage,disponible,piedpage,signature,entetepage,certificat,patient,
+						numerodossier,sexe,adresse,medecin,nom,prenom,email,datenaissance,prenommedecin,emailmedecin,datecreation,etat)
+						VALUES
+						('$dirArchives/$dateRep/$year/$month/$nameFile.pdf','$dateInsrt','$bioValideur','$nbPage',false,false,false,false,false,'$nomPatient',
+						'$numeroDossier','$sexe','$adressePatient','$medecin','$nom','$prenom','$emailPatient','$dateInsrt','$medecin','$medecin','$dateInsrt','traité');"
+						convertDataToXml	
+					fi;				 
 
-					fi;
-				else 
+				fi;
+			else 
 					#ERREUR2
 					#Deplacement des fichiers dans le dossier Erreur2 qui n'ont pas le numero dossier et nomPatient
 					controleDir $dirErreur2;
@@ -254,11 +255,11 @@
 			#pdftk
 			arg1=$1 #$1 represente first argument
 			if [ -n "$arg1" ]; then #si calque bien ajouter	
-				controlDir "$dirArchives";
+			controlDir "$dirArchives";
 
-				pdftk $dirWork/$nameFile.pdf stamp  $arg1 output $dirArchives/$year/$month/$dateRep/$nameFile.pdf;
-				echo "calque bien ajouter"
-			else
+			pdftk $dirWork/$nameFile.pdf stamp  $arg1 output $dirArchives/$year/$month/$dateRep/$nameFile.pdf;
+			echo "calque bien ajouter"
+		else
 				#ERREUR3
 				controlDir "$dirErreur3";
 				statut=$nameFile.pdf"-> Erreur insertion de calques";
@@ -278,7 +279,7 @@
 			
 			if [ ! -d $dirLogs ];then
 				mkdir $dirLogs;
-								
+				
 			fi;
 			#createDirectory;
 			controlDir "$dirLogs";
@@ -330,63 +331,87 @@
 				echo "run script">>$dirRunning/$dateFIle.txt
 			fi
 
-			fileRunningScript="RUNNING/dateFIle.txt";
-			if [ -e "$fileRunningScript" ];then
-				echo "en entente de 60 sec"
-			    sleep 60s; 
-			    main;
+			fileRunningScript="$dirRunning/$dateFIle.txt";
+			if [ ! -e "$fileRunningScript" ];then
+				sleep 5s; 
+				rm $dirRunning/$dateFIle.txt;
+				main;
 			else 
-			   	echo "script fini"
+				
 			   	#INSERTION ET GENERATION DANS LE FICHIER XML
-				document=$(selectData "SELECT dateedition,biologistevalidateur,nbrpage,numerodossier,patient,sexe,adresse,nom,prenom,email,datenaissance,medecin,prenommedecin,emailmedecin FROM compterendubox WHERE datecreation='2021-08-27' LIMIT 1");
-				if [ ! -e "$dateFIle.zip" ]; then
-					controlDir "$dirArchives";
-					cp $dirXml/$dateFIle.xml $dateFIle
-					cp $dirArchives/$year/$month/$dateRep/*.pdf $dateFIle;
+			   	selectData "SELECT idcoompterendu from compterendubox WHERE datecreation='$dateInsrt' AND etat='traité' LIMIT 10"| while read idcompterendu; 
+			   	do
+					updateData "$idcompterendu"
 					
-					sleep 3s; 
-					zip -r -D $dateFIle.zip $dateFIle/*
+				done;
+			 	
+			   	verifvalue="$dirEnvoie/$dirFait/$year/$month/$dateRep/$dateFIle.zip"
+
+			   	if [ -e "$verifvalue" ]; then
+			   		verifvalue="$dirXml/$dateFIle.xml" 
+			   		if [ -e "$verifvalue" ]; then
+			   			rm -rf  $dirXml/$dateFIle.xml
+			   			rm -rf  $dateFIle/*.pdf;
+			   			rm -rf  $dateFIle/$dateFIle.xml 
+			   		else
+			   			
+			   			exit;
+			   		fi
+			   	else
+			   		controlDir "$dirArchives";
+			   		cp $dirXml/$dateFIle.xml $dateFIle
+			   		cp $dirArchives/$year/$month/$dateRep/*.pdf $dateFIle;
+			   		
+			   		sleep 3s; 
+			   		zip -r -D $dateFIle.zip $dateFIle/*
+			   		
+					#envoie ftp
+					# si l'envoie se passe bien on deplace les fichiers vers le dossier envoie/fait/...
+					#on change le status dans la base de donnée en envoie
 					mv $dateFIle.zip $dirEnvoie/$dirFait/$year/$month/$dateRep
+					
+
+					#si non on le deplace dans enattente et on change le status dans la base de donnée
+					#mv $dateFIle.zip $dirEnvoie/$dirEnAttente/$year/$month/$dateRep
+					#rm $dirXml/$dateFIle.xml
+					
 				fi
 				
-
 			fi;
+			traitementPdf;
 		}
 
 		generateentetexml(){
-		if [ ! -d "$dirXml" ]; then
-			mkdir $dirXml;
-		fi
+			if [ ! -d "$dirXml" ]; then
+				mkdir $dirXml;
+			fi
 
-		if [ ! -e $dirXml/$dateFIle.xml ];then
-			echo "data ajouté dans le fichier xml"
+			if [ ! -e $dirXml/$dateFIle.xml ];then
 				echo "<?xml version="1.0" encoding="utf-8"?>">>$dirXml/$dateFIle.xml
-		fi;
-
+			fi;
 		}
 		function convertDataToXml(){
-			
 			echo "			
-			<crr nom="$dateRep" numeroDossier="$numeroDossier_"  numPage="$nbPage">
-				<patient>
-					<NomCompletPatient>$nomPatient</NomCompletPatient>
-					<Nom>$nom</Nom>
-					<Prenom>$prenom</Prenom>
-					<Sexe>$sexe</Sexe>
-					<DateNaissance>$dateDeNaissance</DateNaissance>
-					<AdressePatient>$adressePatient</AdressePatient>
-					<mailPatient>$emailPatient</mailPatient>
-				</patient>
-				<medecin>
-					<NomCompletMedecin>$medecin</NomCompletMedecin>
-					<NomMedecin>$nommedecin</NomMedecin>
-					<PrenomMedecin>$prenommedecin</PrenomMedecin>
-					<EmailMedecin>$emailMedecin</EmailMedecin>
-				</medecin>
-				<labo>
-					<BioValidateur>$bioValideur</BioValidateur>
-					<DateEdition>$datecreation</DateEdition>		
-				</labo>
+			<crr nom="$dateRep" numeroDossier="$numeroDossier"  numPage="$nbPage">
+			<patient>
+			<NomCompletPatient>$nomPatient</NomCompletPatient>
+			<Nom>$nom</Nom>
+			<Prenom>$prenom</Prenom>
+			<Sexe>$sexe</Sexe>
+			<DateNaissance>$dateDeNaissance</DateNaissance>
+			<AdressePatient>$adressePatient</AdressePatient>
+			<mailPatient>$emailPatient</mailPatient>
+			</patient>
+			<medecin>
+			<NomCompletMedecin>$medecin</NomCompletMedecin>
+			<NomMedecin>$nommedecin</NomMedecin>
+			<PrenomMedecin>$prenommedecin</PrenomMedecin>
+			<EmailMedecin>$emailMedecin</EmailMedecin>
+			</medecin>
+			<labo>
+			<BioValidateur>$bioValideur</BioValidateur>
+			<DateEdition>$datecreation</DateEdition>		
+			</labo>
 			</crr>">>$dirXml/$dateFIle.xml
 
 		}
