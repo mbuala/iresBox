@@ -3,13 +3,12 @@ source_host=vps-e9aee6f1.vps.ovh.net
 PORT=22
 sftp_user=ubuntu
 sftp_pass=x9nuZ7pD84vM
-
 day=$(date +%d);
 month=$(date +%m);
 year=$(date +%Y);
 dateRep="$(date +%d_%m_%Y)";
 local_directory=/home/ubuntu/pdf #REPERTOIRE DU SERVERUR FTP
-source_folder="/home/mbuala/file/" #REPERTOIRE IRESBOX
+source_folder="/home/ubuntu/file" #REPERTOIRE IRESBOX
 inotifywait -m -r -e create --format '%w%f' "${source_folder}" | while read NEWFILE
 #${NEWFILE} has been created
 do
@@ -26,5 +25,3 @@ send "bye\r"
 interact
 EOD
 done
-
-

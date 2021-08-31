@@ -1,6 +1,6 @@
-#!/usr/bin/env 
+#!/usr/bin/env
 sendzipinftp(){
-  if [ "$(ls -A /home/mbuala/file/)" ] #REPERTOIRE FTP 
+  if [ "$(ls -A /home/ubuntu/file/)" ] #REPERTOIRE FTP
    then
    timeout 10s sh /var/www/html/iresBox/auth.sh
      if [ $? -eq 0 ]; then
