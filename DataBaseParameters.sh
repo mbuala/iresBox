@@ -3,9 +3,9 @@
 	function main(){
 		#DATABASE PARAMETRES
 		DATABASE="iresbox"
-		USERNAME="mbuala"
-		HOsTNAME="localhost"
-		PORT="5432"
+        USERNAME="adminslk"
+        HOsTNAME="vps-e9aee6f1.vps.ovh.net"
+        PORT="5432"
 		export PGPASSWORD=pg_db_password
 	}
 

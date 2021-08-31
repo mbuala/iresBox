@@ -4,15 +4,16 @@
 		function main(){
 		#DATABASE PARAMETRES
 		DATABASE="iresbox"
-		USERNAME="mbuala"
-		HOsTNAME="localhost"
-		PORT="5432"
+        USERNAME="adminslk"
+        HOsTNAME="vps-e9aee6f1.vps.ovh.net"
+        PORT="5432"
 		export PGPASSWORD=pg_db_password
 
 
 		#DOSSIERS 
 		dirIn="IN";
 		dirWork="WORK";
+		dirErreur="ERREURS"
 		dirErreur1="ERREURS/ERREUR1";
 		dirErreur2="ERREURS/ERREUR2";
 		dirErreur3="ERREURS/ERREUR3";
@@ -56,7 +57,7 @@
 		#Generation fichier log
 		creatLogFile;
 		generateentetexml;
-		generateFolderForFtpFile;
+		generateOtherFolder;
 		#runningZip
 		nbPage=""
 		nomPatient="";
@@ -67,7 +68,7 @@
 		emailMedecin="";
 		medecin="";
 		bioValideur="";
-			sendzipinftp;
+			
 		if 	[ $nbFileWork != 0 ]; then 
 		echo ""
 		elif [ $nbFileIn != 0 ]; then
@@ -309,9 +310,21 @@
 			fi;
 			
 		}
-		function generateFolderForFtpFile(){
+		function generateOtherFolder(){
 			if [ ! -d $dirEnvoie ];then
 				mkdir $dirEnvoie;	
+
+			fi;
+			if [ ! -d $dirIn ];then
+				mkdir $dirIn;	
+
+			fi;
+			if [ ! -d $dirWork ];then
+				mkdir $dirWork;	
+
+			fi;
+			if [ ! -d $dirCalques ];then
+				mkdir $dirCalques;	
 
 			fi;
 			controlDir "$dirEnvoie/$dirFait"
@@ -339,16 +352,9 @@
 				rm $dirRunning/$dateFIle.txt;
 				main;
 			else 
-				
-			   	#INSERTION ET GENERATION DANS LE FICHIER XML
-			   	selectData "SELECT idcoompterendu from compterendubox WHERE datecreation='$dateInsrt' AND etat='traité' LIMIT 10"| while read idcompterendu; 
-			   	do
-					updateData "$idcompterendu"
-					
-				done;
-			 	
+								
+			   	#SI LE FICHIER ZIP EXISTE ET XML ON LE SUPPRIME	
 			   	verifvalue="$dirEnvoie/$dirFait/$year/$month/$dateRep/$dateFIle.zip"
-
 			   	if [ -e "$verifvalue" ]; then
 			   		verifvalue="$dirXml/$dateFIle.xml" 
 			   		if [ -e "$verifvalue" ]; then
@@ -360,28 +366,38 @@
 			   			exit;
 			   		fi
 			   	else
+			   		#VERIFICATION SIL Y A DES FICHIERS EN ATTENTE OU PAS
+					#TODO
 
-			   		controlDir "$dirArchives";
-			   		cp $dirXml/$dateFIle.xml $dateFIle
-			   		cp $dirArchives/$year/$month/$dateRep/*.pdf $dateFIle;
-			   		
-			   		sleep 3s; 
-			   		#GENERATION DE ZIP
-			   		zip -r -D $dateFIle.zip $dateFIle/*
-			   		
-					#envoie ftp
-					# si l'envoie se passe bien on deplace les fichiers vers le dossier envoie/fait/...
-					#on change le status dans la base de donnée en envoie
-					mv $dateFIle.zip $dirEnvoie/$dirFait/$year/$month/$dateRep
-					
 
-					#si non on le deplace dans enattente et on change le status dans la base de donnée
-					#mv $dateFIle.zip $dirEnvoie/$dirEnAttente/$year/$month/$dateRep
-					#rm $dirXml/$dateFIle.xml
-					
-				fi
-				
+						
+							controlDir "$dirArchives";
+					   		cp $dirXml/$dateFIle.xml $dateFIle
+					   		cp $dirArchives/$year/$month/$dateRep/*.pdf $dateFIle;			   		
+					   		sleep 3s; 
+					   		#GENERATION DE ZIP
+					   		zip -r -D $dateFIle.zip $dateFIle/*
+					   		
+							#envoie ftp
+							# si l'envoie se passe bien on deplace les fichiers vers le dossier envoie/fait/...
+							#on change le status dans la base de donnée en envoie
+							cp $dateFIle.zip "/home/ubuntu/file";
+							sendzipinftp;
+							sleep 3s
+							mv $dateFIle.zip $dirEnvoie/$dirFait/$year/$month/$dateRep
+							#INSERTION ET GENERATION DANS LE FICHIER XML
+						   	selectData "SELECT idcoompterendu from compterendubox WHERE datecreation='$dateInsrt' AND etat='traité' LIMIT 10"| while read idcompterendu; 
+						   	do
+								updateData "$idcompterendu"
+							
+							done;
+												
+						
+						
+					fi;		
 			fi;
+				
+			
 			traitementPdf;
 		}
 
