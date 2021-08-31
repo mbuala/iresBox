@@ -1,5 +1,6 @@
-		#!/usr/bin/env 
+ 		#!/usr/bin/env 
 		. ./DataBaseParameters.sh --source-only
+		. ./envoifichierftp.sh --source-only
 		function main(){
 		#DATABASE PARAMETRES
 		DATABASE="iresbox"
@@ -66,10 +67,11 @@
 		emailMedecin="";
 		medecin="";
 		bioValideur="";
+			sendzipinftp;
 		if 	[ $nbFileWork != 0 ]; then 
-			#TO DO
-			echo ""
+		echo ""
 		elif [ $nbFileIn != 0 ]; then
+
 			traitementPdf;	
 			
 		else
@@ -358,11 +360,13 @@
 			   			exit;
 			   		fi
 			   	else
+
 			   		controlDir "$dirArchives";
 			   		cp $dirXml/$dateFIle.xml $dateFIle
 			   		cp $dirArchives/$year/$month/$dateRep/*.pdf $dateFIle;
 			   		
 			   		sleep 3s; 
+			   		#GENERATION DE ZIP
 			   		zip -r -D $dateFIle.zip $dateFIle/*
 			   		
 					#envoie ftp
